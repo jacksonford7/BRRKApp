@@ -12,7 +12,6 @@ namespace BRBKApp.Views
         {
             InitializeComponent();
             _viewModel = new CediOrdenTrabajoViewModel();
-            _viewModel.LoadOrdenes().ConfigureAwait(true);
             BindingContext = _viewModel;
         }
         protected override void OnAppearing()

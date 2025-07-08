@@ -12,7 +12,6 @@ namespace BRBKApp.Views
         {
             InitializeComponent();
             _viewModel = new CediTarjaViewModel();
-            _viewModel.LoadTarja().ConfigureAwait(true);
             BindingContext = _viewModel;
         }
         protected override void OnAppearing()
