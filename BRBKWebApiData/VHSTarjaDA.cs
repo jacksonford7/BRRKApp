@@ -33,7 +33,7 @@ namespace BRBKWebApiData
             parametros.Clear();
             parametros.Add("filtrar", filtrar);
             parametros.Add("OrdenTrabajoId", idOrden);
-            List<VHSTarjaMensaje> list = sql_puntero.ExecuteSelectControl<VHSTarjaMensaje>(nueva_conexion, 4000, "[cedi].lista_tarjas_pendientes", parametros, out OnError);
+            List<VHSTarjaMensaje> list = sql_puntero.ExecuteSelectControl<VHSTarjaMensaje>(nueva_conexion, 4000, "[vhs].lista_tarjas_pendientes", parametros, out OnError);
 
             return list;
         }
@@ -53,7 +53,7 @@ namespace BRBKWebApiData
             var novedadId = sql_puntero.ExecuteSelectOnlyInt(
                 nueva_conexion,
                 4000, 
-                "[cedi].[crear_novedad]",
+                "[vhs].[crear_novedad]",
                 parametros,
                 out OnError);
 
@@ -71,7 +71,7 @@ namespace BRBKWebApiData
             var fotoId = sql_puntero.ExecuteSelectOnlyInt(
                 nueva_conexion,
                 4000,
-                "[cedi].[crear_novedad_foto]",
+                "[vhs].[crear_novedad_foto]",
                 parametros,
                 out OnError);
 
@@ -87,7 +87,7 @@ namespace BRBKWebApiData
             List<VHSMensajeSimple> list = sql_puntero.ExecuteSelectControl<VHSMensajeSimple>(
                 nueva_conexion,
                 4000,
-                "[cedi].[lista_vehiculos_despacho]",
+                "[vhs].[lista_vehiculos_despacho]",
                 parametros,
                 out OnError
             );
@@ -104,7 +104,7 @@ namespace BRBKWebApiData
             parametros.Add("Observacion", tarjaModel.Observacion);
             parametros.Add("Contenido", tarjaModel.Contenido);
             parametros.Add("Usuario", tarjaModel.Usuario);
-            var entero = sql_puntero.ExecuteSelectOnlyInt(nueva_conexion, 4000, "[cedi].[crear_tarja]", parametros, out OnError);
+            var entero = sql_puntero.ExecuteSelectOnlyInt(nueva_conexion, 4000, "[vhs].[crear_tarja]", parametros, out OnError);
             if (!entero.HasValue)
             {
                 return new VHSTarjaModel();
@@ -125,7 +125,7 @@ namespace BRBKWebApiData
                 parametros.Add("TarjaId", item.TarjaId);
                 parametros.Add("i_ruta", item.Ruta);
                 parametros.Add("Usuario", tarjaModel.Usuario);
-                var detalleid = sql_puntero.ExecuteSelectOnlyInt(nueva_conexion, 4000, "[cedi].[crear_tarja_foto]", parametros, out OnError);
+                var detalleid = sql_puntero.ExecuteSelectOnlyInt(nueva_conexion, 4000, "[vhs].[crear_tarja_foto]", parametros, out OnError);
                 if (detalleid.HasValue && (detalleid ?? 0) > 0)
                 {
                     item.TarjaFotoId = detalleid.Value;
@@ -151,12 +151,12 @@ namespace BRBKWebApiData
             parametros.Clear();
             parametros.Add("filtrar", filtrar);
             parametros.Add("OrdenTrabajoId", idOrden);
-            List<VHSTarjaMensaje> list = sql_puntero.ExecuteSelectControl<VHSTarjaMensaje>(nueva_conexion, 4000, "[cedi].lista_tarjas_pendientes", parametros, out OnError);
+            List<VHSTarjaMensaje> list = sql_puntero.ExecuteSelectControl<VHSTarjaMensaje>(nueva_conexion, 4000, "[vhs].lista_tarjas_pendientes", parametros, out OnError);
             foreach (var item in list)
             {
                 parametros.Clear();
                 parametros.Add("TarjaID", item.TarjaId);
-                List<VHSTarjaDetalleMensaje> detalle = sql_puntero.ExecuteSelectControl<VHSTarjaDetalleMensaje>(nueva_conexion, 4000, "[cedi].[lista_detalle_tarjas]", parametros, out OnError);
+                List<VHSTarjaDetalleMensaje> detalle = sql_puntero.ExecuteSelectControl<VHSTarjaDetalleMensaje>(nueva_conexion, 4000, "[vhs].[lista_detalle_tarjas]", parametros, out OnError);
                 item.Detalle = detalle;
             }
             return list;
@@ -167,7 +167,7 @@ namespace BRBKWebApiData
             OnInit(_dbname);
             parametros.Clear();
             parametros.Add("TarjaID", idTarja);
-            List<VHSTarjaDetalleMensaje> detalle = sql_puntero.ExecuteSelectControl<VHSTarjaDetalleMensaje>(nueva_conexion, 4000, "[cedi].[lista_detalle_tarjas]", parametros, out OnError);
+            List<VHSTarjaDetalleMensaje> detalle = sql_puntero.ExecuteSelectControl<VHSTarjaDetalleMensaje>(nueva_conexion, 4000, "[vhs].[lista_detalle_tarjas]", parametros, out OnError);
             return detalle;
         }
 
@@ -190,7 +190,7 @@ namespace BRBKWebApiData
 
             // Crear e inicializar SqlConnection usando la cadena de conexión
             using (var connection = new SqlConnection(nueva_conexion))
-            using (var command = new SqlCommand("[cedi].[crear_detalle_tarja]", connection))
+            using (var command = new SqlCommand("[vhs].[crear_detalle_tarja]", connection))
             {
                 command.CommandType = CommandType.StoredProcedure;
                 foreach (var param in parametros)
@@ -228,7 +228,7 @@ namespace BRBKWebApiData
                     parametros.Add("i_ruta", item.FotosVehiculo);
                     parametros.Add("Usuario", parametro.Create_user);
                     using (var fotoConnection = new SqlConnection(nueva_conexion))
-                    using (var fotoCommand = new SqlCommand("[cedi].[crear_detalle_tarja_foto]", fotoConnection))
+                    using (var fotoCommand = new SqlCommand("[vhs].[crear_detalle_tarja_foto]", fotoConnection))
                     {
                         fotoCommand.CommandType = CommandType.StoredProcedure;
                         foreach (var param in parametros)
@@ -264,7 +264,7 @@ namespace BRBKWebApiData
             try
             {
                 using (var connection = new SqlConnection(nueva_conexion))
-                using (var command = new SqlCommand("[cedi].[consultar_detalle_tarja]", connection))
+                using (var command = new SqlCommand("[vhs].[consultar_detalle_tarja]", connection))
                 {
                     command.CommandType = CommandType.StoredProcedure;
                     command.Parameters.AddWithValue("@DetalleTarjaId", detalleTarjaId);
@@ -358,7 +358,7 @@ namespace BRBKWebApiData
             try
             {
                 using (var connection = new SqlConnection(nueva_conexion))
-                using (var command = new SqlCommand("[cedi].[actualizar_detalle_tarja]", connection))
+                using (var command = new SqlCommand("[vhs].[actualizar_detalle_tarja]", connection))
                 {
                     command.CommandType = CommandType.StoredProcedure;
                     command.Parameters.AddWithValue("@DetalleTarjaId", detalleTarjaId);
@@ -397,7 +397,7 @@ namespace BRBKWebApiData
             try
             {
                 using (var connection = new SqlConnection(nueva_conexion))
-                using (var command = new SqlCommand("[cedi].[lista_bloques]", connection))
+                using (var command = new SqlCommand("[vhs].[lista_bloques]", connection))
                 {
                     command.CommandType = CommandType.StoredProcedure;
                     connection.Open();
@@ -434,7 +434,7 @@ namespace BRBKWebApiData
             try
             {
                 using (var connection = new SqlConnection(nueva_conexion))
-                using (var command = new SqlCommand("[cedi].[lista_tipos_novedad]", connection))
+                using (var command = new SqlCommand("[vhs].[lista_tipos_novedad]", connection))
                 {
                     command.CommandType = CommandType.StoredProcedure;
                     connection.Open();
