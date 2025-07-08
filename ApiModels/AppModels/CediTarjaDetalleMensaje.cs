@@ -1,4 +1,6 @@
+
 using System;
+
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,10 +22,13 @@ namespace ApiModels.AppModels
         public string Observaciones { get; set; }
         public List<CediTarjaDetalleFoto> Fotos { get; set; }
         public string Mensaje { get; set; }
-        public CediBloque Bloque { get; set; }
+
+        public CediBloque Bloque { get; set; } // Cambiado de CediBloque a int?
+
         public int NumeroBloque { get; set; }
         public int Id { get; set; }
         public string Nombre_Bloque { get; set; }
         public int Capacidad { get; set; }
     }
+
 }

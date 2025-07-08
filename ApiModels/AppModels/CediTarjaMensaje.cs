@@ -1,3 +1,4 @@
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,8 +14,15 @@ namespace ApiModels.AppModels
         public string Mensaje { get; set; }
         public List<CediTarjaDetalleMensaje> Detalle { get; set; }
         public int DetalleTarjaID { get; set; }
+
+
         public string DescripcionProducto { get; set; }
+
         public string Origen { get; set; }
+
         public long VehiculoDespachadoID { get; set; }
+
+
+
     }
 }

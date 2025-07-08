@@ -1,3 +1,4 @@
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +13,8 @@ namespace ApiModels.AppModels
         public int DetalleTarjaID { get; set; }
         public string FotosVehiculo { get; set; }
         public byte[] ArrayFoto { get; set; }
-        public int Orden { get; set; }
+
+        public int Orden {  get; set; }
+
     }
 }
