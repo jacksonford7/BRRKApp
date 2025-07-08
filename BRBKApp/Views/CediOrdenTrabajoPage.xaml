@@ -24,6 +24,10 @@
                                             <Label Text="{Binding NumeroOrden}" />
                                             <Label Text="{Binding Mensaje}" LineBreakMode="WordWrap"/>
                                         </StackLayout>
+                                        <StackLayout Grid.Column="1" >
+                                            <Button Text="Crear Tarja" HorizontalOptions="End" VerticalOptions="CenterAndExpand" WidthRequest="120" HeightRequest="35" CornerRadius="20"
+                                                    Command="{Binding Source={RelativeSource AncestorType={x:Type vm:CediOrdenTrabajoViewModel}}, Path=ButtonCommand}" CommandParameter="{Binding .}"/>
+                                        </StackLayout>
                                     </Grid>
                                 </Frame>
                             </StackLayout>
