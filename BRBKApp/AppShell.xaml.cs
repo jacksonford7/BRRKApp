@@ -58,6 +58,9 @@ namespace BRBKApp
             Routing.RegisterRoute(nameof(VHSTarjaConsultaDetail), typeof(VHSTarjaConsultaDetail));
             //Routing.RegisterRoute(nameof(VHSNovedadDetalleTarjaPage), typeof(VHSNovedadDetalleTarjaPage));
 
+            Routing.RegisterRoute(nameof(CediOrdenTrabajoPage), typeof(CediOrdenTrabajoPage));
+            Routing.RegisterRoute(nameof(CediTarjaPage), typeof(CediTarjaPage));
+
             //AbrirTarjaNovedades = new Command(async () =>
             //{
             //    await Shell.Current.GoToAsync("VHSTarjaConsultaDetail?origen=Novedad");

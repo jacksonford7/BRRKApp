@@ -56,7 +56,7 @@ namespace BRBKApp.ViewModels
         }
 
 
-        public bool esActivoMn5 // Menu VHS
+        public bool esActivoMn5 // Menu CEDI
         {
             get => _esActivoMn5;
             set { _esActivoMn5 = value; OnPropertyChanged(); }
@@ -66,6 +66,21 @@ namespace BRBKApp.ViewModels
         {
             get => _esActivoMn6;
             set { _esActivoMn6 = value; OnPropertyChanged(); }
+        }
+        //########################
+        //     OPCIONES CEDI
+        //########################
+        public bool _esActivoCEDI1 = false;
+        public bool esActivoCEDI1
+        {
+            get => _esActivoCEDI1;
+            set { _esActivoCEDI1 = value; OnPropertyChanged(); }
+        }
+        public bool _esActivoCEDI2 = false;
+        public bool esActivoCEDI2
+        {
+            get => _esActivoCEDI2;
+            set { _esActivoCEDI2 = value; OnPropertyChanged(); }
         }
         //########################
         //     OPCIONES BRBK
@@ -296,10 +311,8 @@ namespace BRBKApp.ViewModels
                                 {
                                     esActivoVHS5 = true;
                                 }
-                                else
-                                {
-                                    esActivoMn5 = true; 
-                                }
+                                if (item.Selection.Trim() == "CEDI1") { esActivoCEDI1 = true; esActivoMn5 = true; }
+                                if (item.Selection.Trim() == "CEDI2") { esActivoCEDI2 = true; esActivoMn5 = true; }
                                 if (item.Selection.Trim() == "VHS6") { esActivoVHS6 = true; esActivoMn6 = true; }
                             }
                         }
