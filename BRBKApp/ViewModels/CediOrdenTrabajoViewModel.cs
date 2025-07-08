@@ -6,6 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
+using BRBKApp.Views;
 
 namespace BRBKApp.ViewModels
 {
@@ -18,6 +19,8 @@ namespace BRBKApp.ViewModels
         public bool esActivo;
         public bool esVisible;
 
+        public Command ButtonCommand { get; }
+
         public ICommand RefreshCommand => new Command(async () => await RefreshItemsAsync());
 
         public CediOrdenTrabajoViewModel()
@@ -27,6 +30,7 @@ namespace BRBKApp.ViewModels
             isRefreshing = false;
             esActivo = true;
             esVisible = true;
+            ButtonCommand = new Command<CediOrdenTrabajo>(OnBotonPresionado);
         }
 
         async Task RefreshItemsAsync()
@@ -59,6 +63,14 @@ namespace BRBKApp.ViewModels
 
             IsRefreshing = false;
             esActivo = true;
+        }
+
+        public async void OnBotonPresionado(CediOrdenTrabajo entry)
+        {
+            if (entry != null)
+            {
+                await Shell.Current.Navigation.PushModalAsync(new Views.CediTarjaPage());
+            }
         }
     }
 }
