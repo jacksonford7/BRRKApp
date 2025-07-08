@@ -159,6 +159,15 @@
     <Compile Include="AppModels\VHSTarjaDetalleMensaje.cs" />
     <Compile Include="AppModels\VHSTarjaFotos.cs" />
     <Compile Include="AppModels\VHSTarjaModel.cs" />
+    <Compile Include="AppModels\CediBloque.cs" />
+    <Compile Include="AppModels\CediEvidenciaEntregaFoto.cs" />
+    <Compile Include="AppModels\CediMensajeSimple.cs" />
+    <Compile Include="AppModels\CediOrdenTrabajo.cs" />
+    <Compile Include="AppModels\CediTarjaDetalleFoto.cs" />
+    <Compile Include="AppModels\CediTarjaMensaje.cs" />
+    <Compile Include="AppModels\CediTarjaDetalleMensaje.cs" />
+    <Compile Include="AppModels\CediTarjaFotos.cs" />
+    <Compile Include="AppModels\CediTarjaModel.cs" />
     <Compile Include="AppModels\workPosition.cs" />
     <Compile Include="Login\Login.cs" />
     <Compile Include="Parametros\ParametroConsultarCheckLoad.cs" />
