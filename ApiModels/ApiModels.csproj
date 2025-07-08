@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1FADC9F3-F6E7-4162-8ECD-5597DC9145D1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ApiModels</RootNamespace>
+    <AssemblyName>ApiModels</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.1.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLite-net, Version=1.7.335.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\sqlite-net-pcl.1.7.335\lib\netstandard2.0\SQLite-net.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_v2, Version=2.0.3.851, Culture=neutral, PublicKeyToken=8226ea5df37bcae9, processorArchitecture=MSIL">
+      <HintPath>..\packages\SQLitePCLRaw.bundle_green.2.0.3\lib\net461\SQLitePCLRaw.batteries_v2.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.core, Version=2.0.3.851, Culture=neutral, PublicKeyToken=1488e028ca7ab535, processorArchitecture=MSIL">
+      <HintPath>..\packages\SQLitePCLRaw.core.2.0.3\lib\netstandard2.0\SQLitePCLRaw.core.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.nativelibrary, Version=2.0.3.851, Culture=neutral, PublicKeyToken=502ed628492ab262, processorArchitecture=MSIL">
+      <HintPath>..\packages\SQLitePCLRaw.bundle_green.2.0.3\lib\net461\SQLitePCLRaw.nativelibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.provider.dynamic_cdecl, Version=2.0.3.851, Culture=neutral, PublicKeyToken=b68184102cba0b3b, processorArchitecture=MSIL">
+      <HintPath>..\packages\SQLitePCLRaw.provider.dynamic_cdecl.2.0.3\lib\netstandard2.0\SQLitePCLRaw.provider.dynamic_cdecl.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.4.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.3\lib\netstandard2.0\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.4.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppModels\AppModelVHSTarjaDetalle.cs" />
+    <Compile Include="AppModels\BAN_Capacidad_Hora_Bodega.cs" />
+    <Compile Include="AppModels\BAN_Catalogo_Altura.cs" />
+    <Compile Include="AppModels\BAN_Catalogo_Bloque.cs" />
+    <Compile Include="AppModels\BAN_Catalogo_Bodega.cs" />
+    <Compile Include="AppModels\BAN_Catalogo_Cargo.cs" />
+    <Compile Include="AppModels\BAN_Catalogo_Consignatario.cs" />
+    <Compile Include="AppModels\BAN_Catalogo_Exportador.cs" />
+    <Compile Include="AppModels\BAN_Catalogo_Fila.cs" />
+    <Compile Include="AppModels\BAN_Catalogo_Hold.cs" />
+    <Compile Include="AppModels\BAN_Catalogo_Linea.cs" />
+    <Compile Include="AppModels\BAN_Catalogo_Marca.cs" />
+    <Compile Include="AppModels\BAN_Catalogo_Piso.cs" />
+    <Compile Include="AppModels\BAN_Catalogo_TipoMovimiento.cs" />
+    <Compile Include="AppModels\BAN_Consulta_Combo.cs" />
+    <Compile Include="AppModels\BAN_Catalogo_Modalidad.cs" />
+    <Compile Include="AppModels\BAN_Catalogo_Profundidad.cs" />
+    <Compile Include="AppModels\BAN_Catalogo_TipoBodega.cs" />
+    <Compile Include="AppModels\BAN_Catalogo_Ubicacion.cs" />
+    <Compile Include="AppModels\BAN_Consulta_FilasPorOrden.cs" />
+    <Compile Include="AppModels\BAN_Embarque_Cab.cs" />
+    <Compile Include="AppModels\BAN_Embarque_Movimiento.cs" />
+    <Compile Include="AppModels\BAN_Embarque_Movimiento_Foto.cs" />
+    <Compile Include="AppModels\BAN_HorarioFinal.cs" />
+    <Compile Include="AppModels\BAN_HorarioInicial.cs" />
+    <Compile Include="AppModels\BAN_Stowage_Movimiento.cs" />
+    <Compile Include="AppModels\BAN_Stowage_Movimiento_Foto.cs" />
+    <Compile Include="AppModels\BAN_Stowage_OrdenDespacho.cs" />
+    <Compile Include="AppModels\BAN_Stowage_Plan_Aisv.cs" />
+    <Compile Include="AppModels\BAN_Stowage_Plan_Cab.cs" />
+    <Compile Include="AppModels\BAN_Stowage_Plan_Det.cs" />
+    <Compile Include="AppModels\Base.cs" />
+    <Compile Include="AppModels\TipoNovedadModel.cs" />
+    <Compile Include="AppModels\VHSBloque.cs" />
+    <Compile Include="AppModels\carrier.cs" />
+    <Compile Include="AppModels\condicion.cs" />
+    <Compile Include="AppModels\configuracionAlerta.cs" />
+    <Compile Include="AppModels\despacho.cs" />
+    <Compile Include="AppModels\deviceSet.cs" />
+    <Compile Include="AppModels\downloadConfirmation.cs" />
+    <Compile Include="AppModels\BAN_Catalogo_Estado.cs" />
+    <Compile Include="AppModels\estado.cs" />
+    <Compile Include="AppModels\fotoDespacho.cs" />
+    <Compile Include="AppModels\fotoNovedad.cs" />
+    <Compile Include="AppModels\fotoRecepcion.cs" />
+    <Compile Include="AppModels\Geolocator.cs" />
+    <Compile Include="AppModels\gkey.cs" />
+    <Compile Include="AppModels\grupoMail.cs" />
+    <Compile Include="AppModels\grupos.cs" />
+    <Compile Include="AppModels\imo.cs" />
+    <Compile Include="AppModels\Items.cs" />
+    <Compile Include="AppModels\lineaNaviera.cs" />
+    <Compile Include="AppModels\maniobra.cs" />
+    <Compile Include="AppModels\nave.cs" />
+    <Compile Include="AppModels\novedad.cs" />
+    <Compile Include="AppModels\opcionesRoles.cs" />
+    <Compile Include="AppModels\parametros.cs" />
+    <Compile Include="AppModels\pasePuerta.cs" />
+    <Compile Include="AppModels\pesaje.cs" />
+    <Compile Include="AppModels\Position.cs" />
+    <Compile Include="AppModels\productos.cs" />
+    <Compile Include="AppModels\recepcion.cs" />
+    <Compile Include="AppModels\Role.cs" />
+    <Compile Include="AppModels\sealValidation.cs" />
+    <Compile Include="AppModels\servicios.cs" />
+    <Compile Include="AppModels\tarjaCab.cs" />
+    <Compile Include="AppModels\tarjaDet.cs" />
+    <Compile Include="AppModels\Tasks.cs" />
+    <Compile Include="AppModels\TasksBD.cs" />
+    <Compile Include="AppModels\ubicacion.cs" />
+    <Compile Include="AppModels\User.cs" />
+    <Compile Include="AppModels\ValidaPaletizado.cs" />
+    <Compile Include="AppModels\VHSEvidenciaEntregaFoto.cs" />
+    <Compile Include="AppModels\VHSMensajeSimple.cs" />
+    <Compile Include="AppModels\VHSOrdenTrabajo.cs" />
+    <Compile Include="AppModels\VHSTarjaDetalleFoto.cs" />
+    <Compile Include="AppModels\VHSTarjaMensaje.cs" />
+    <Compile Include="AppModels\VHSTarjaDetalleMensaje.cs" />
+    <Compile Include="AppModels\VHSTarjaFotos.cs" />
+    <Compile Include="AppModels\VHSTarjaModel.cs" />
+    <Compile Include="AppModels\workPosition.cs" />
+    <Compile Include="Login\Login.cs" />
+    <Compile Include="Parametros\ParametroConsultarCheckLoad.cs" />
+    <Compile Include="Parametros\ParametroConsultarEmbarqueInbox.cs" />
+    <Compile Include="Parametros\ParametroConsultarPreDespacho.cs" />
+    <Compile Include="Parametros\ParametroConsultarPasePuerta.cs" />
+    <Compile Include="Parametros\ParametroConsultarUbicacion.cs" />
+    <Compile Include="Parametros\ParametroConsultarRecepcion.cs" />
+    <Compile Include="Parametros\ParametroConsultarSello.cs" />
+    <Compile Include="Parametros\ParametroConsultarStowagePlanAisv.cs" />
+    <Compile Include="Parametros\ParametroConsultarTarjaDet.cs" />
+    <Compile Include="Parametros\ParametroRegistraConfirmacionDescarga.cs" />
+    <Compile Include="Parametros\ParametroRegistrarContainersPesaje.cs" />
+    <Compile Include="Parametros\ParametroRegistrarDespacho.cs" />
+    <Compile Include="Parametros\ParametroRegistrarEmbarqueVBS.cs" />
+    <Compile Include="Parametros\ParametroRegistrarEvidenciaEntrega.cs" />
+    <Compile Include="Parametros\ParametroRegistrarNovedadDetalleTarja.cs" />
+    <Compile Include="Parametros\ParametroRegistrarPOW.cs" />
+    <Compile Include="Parametros\ParametroRegistrarRecepcionAisv.cs" />
+    <Compile Include="Parametros\ParametroRegistrarRecepcion.cs" />
+    <Compile Include="Parametros\ParametroRegistrarSealValidation.cs" />
+    <Compile Include="Parametros\ParametrosRegistraGeolocalizacion.cs" />
+    <Compile Include="Parametros\ParametrosRegistraNovedad.cs" />
+    <Compile Include="Parametros\ParametroVHSActualizarDetalleTarja.cs" />
+    <Compile Include="Parametros\ParametroVHSCrearEvidenciaEntrega.cs" />
+    <Compile Include="Parametros\ParametroVHSPasePuerta.cs" />
+    <Compile Include="Parametros\ParametroVHSTarjaDetalle.cs" />
+    <Compile Include="Parametros\ParametroUsuario.cs" />
+    <Compile Include="Parametros\ParametroVHSCreaTarja.cs" />
+    <Compile Include="Parametros\ParametroVHSCreaTarjaFoto.cs" />
+    <Compile Include="Parametros\ParametroVHSListaOrdenesTrabajoPendiente.cs" />
+    <Compile Include="Parametros\ParametroVHSListaTarjaPendiente.cs" />
+    <Compile Include="Parametros\ParametroVHSTarjaDetalleAdd.cs" />
+    <Compile Include="Parametros\ParametroVHSTarjaDetalleUpdate.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resultados\Base.cs" />
+    <Compile Include="Resultados\ResultadoGeolocalizacion.cs" />
+    <Compile Include="Resultados\ResultadoNovedad.cs" />
+    <Compile Include="Resultados\ResultadoTipoNovedad.cs" />
+    <Compile Include="Resultados\ResultadoUsuario.cs" />
+    <Compile Include="Resultados\ResultadoWorkInProgresses.cs" />
+    <Compile Include="Resultados\ResultadoWorkInProgressRegisters.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\SQLitePCLRaw.lib.e_sqlite3.2.0.3\build\net461\SQLitePCLRaw.lib.e_sqlite3.targets" Condition="Exists('..\packages\SQLitePCLRaw.lib.e_sqlite3.2.0.3\build\net461\SQLitePCLRaw.lib.e_sqlite3.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\SQLitePCLRaw.lib.e_sqlite3.2.0.3\build\net461\SQLitePCLRaw.lib.e_sqlite3.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\SQLitePCLRaw.lib.e_sqlite3.2.0.3\build\net461\SQLitePCLRaw.lib.e_sqlite3.targets'))" />
+  </Target>
+</Project>

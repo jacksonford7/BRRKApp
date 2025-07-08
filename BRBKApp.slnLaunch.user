@@ -1,0 +1,12 @@
+[
+  {
+    "Name": "Nuevo perfil",
+    "Projects": [
+      {
+        "Path": "BRBKWebApi\\BRBKWebApi.csproj",
+        "Action": "Start",
+        "DebugTarget": "Servidor web (Google Chrome)"
+      }
+    ]
+  }
+]

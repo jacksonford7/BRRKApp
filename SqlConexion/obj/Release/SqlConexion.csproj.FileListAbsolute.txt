@@ -1,0 +1,6 @@
+D:\Proyectos\BRBKApp\SqlConexion\bin\Release\SqlConexion.dll
+D:\Proyectos\BRBKApp\SqlConexion\bin\Release\SqlConexion.pdb
+D:\Proyectos\BRBKApp\SqlConexion\obj\Release\SqlConexion.csproj.AssemblyReference.cache
+D:\Proyectos\BRBKApp\SqlConexion\obj\Release\SqlConexion.csproj.CoreCompileInputs.cache
+D:\Proyectos\BRBKApp\SqlConexion\obj\Release\SqlConexion.dll
+D:\Proyectos\BRBKApp\SqlConexion\obj\Release\SqlConexion.pdb

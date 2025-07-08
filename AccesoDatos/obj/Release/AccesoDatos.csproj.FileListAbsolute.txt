@@ -1,0 +1,6 @@
+D:\Proyectos\BRBKApp\AccesoDatos\bin\Release\AccesoDatos.dll
+D:\Proyectos\BRBKApp\AccesoDatos\bin\Release\AccesoDatos.pdb
+D:\Proyectos\BRBKApp\AccesoDatos\obj\Release\AccesoDatos.csproj.AssemblyReference.cache
+D:\Proyectos\BRBKApp\AccesoDatos\obj\Release\AccesoDatos.csproj.CoreCompileInputs.cache
+D:\Proyectos\BRBKApp\AccesoDatos\obj\Release\AccesoDatos.dll
+D:\Proyectos\BRBKApp\AccesoDatos\obj\Release\AccesoDatos.pdb

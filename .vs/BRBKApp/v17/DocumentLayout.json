@@ -1,0 +1,639 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Proyectos\\BRBKApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A8658C05-CCEE-4F7E-A29C-954497DF22CA}|BRBKApp\\BRBKApp.csproj|d:\\proyectos\\brbkapp\\brbkapp\\viewmodels\\vhstarjaconsultadetailviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8658C05-CCEE-4F7E-A29C-954497DF22CA}|BRBKApp\\BRBKApp.csproj|solutionrelative:brbkapp\\viewmodels\\vhstarjaconsultadetailviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8658C05-CCEE-4F7E-A29C-954497DF22CA}|BRBKApp\\BRBKApp.csproj|d:\\proyectos\\brbkapp\\brbkapp\\views\\vhstarjaconsultadetail.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8658C05-CCEE-4F7E-A29C-954497DF22CA}|BRBKApp\\BRBKApp.csproj|solutionrelative:brbkapp\\views\\vhstarjaconsultadetail.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{585B94D5-21F8-497E-9BBC-F5A78DF82E9C}|BRBKWebApiData\\BRBKWebApiData.csproj|D:\\Proyectos\\BRBKApp\\brbkwebapidata\\vhstarjada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{585B94D5-21F8-497E-9BBC-F5A78DF82E9C}|BRBKWebApiData\\BRBKWebApiData.csproj|solutionrelative:brbkwebapidata\\vhstarjada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{585B94D5-21F8-497E-9BBC-F5A78DF82E9C}|BRBKWebApiData\\BRBKWebApiData.csproj|d:\\proyectos\\brbkapp\\brbkwebapidata\\vhsvehiculodespachoda .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{585B94D5-21F8-497E-9BBC-F5A78DF82E9C}|BRBKWebApiData\\BRBKWebApiData.csproj|solutionrelative:brbkwebapidata\\vhsvehiculodespachoda .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{585B94D5-21F8-497E-9BBC-F5A78DF82E9C}|BRBKWebApiData\\BRBKWebApiData.csproj|d:\\proyectos\\brbkapp\\brbkwebapidata\\vhsordentrabajoda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{585B94D5-21F8-497E-9BBC-F5A78DF82E9C}|BRBKWebApiData\\BRBKWebApiData.csproj|solutionrelative:brbkwebapidata\\vhsordentrabajoda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{585B94D5-21F8-497E-9BBC-F5A78DF82E9C}|BRBKWebApiData\\BRBKWebApiData.csproj|d:\\proyectos\\brbkapp\\brbkwebapidata\\vhsevidenciaentregada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{585B94D5-21F8-497E-9BBC-F5A78DF82E9C}|BRBKWebApiData\\BRBKWebApiData.csproj|solutionrelative:brbkwebapidata\\vhsevidenciaentregada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD948DB4-AE78-4DF4-890B-1BE03E962A1E}|BRBKWebApi\\BRBKWebApi.csproj|D:\\Proyectos\\BRBKApp\\brbkwebapi\\controllers\\vhs\\vhscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD948DB4-AE78-4DF4-890B-1BE03E962A1E}|BRBKWebApi\\BRBKWebApi.csproj|solutionrelative:brbkwebapi\\controllers\\vhs\\vhscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8658C05-CCEE-4F7E-A29C-954497DF22CA}|BRBKApp\\BRBKApp.csproj|d:\\proyectos\\brbkapp\\brbkapp\\da\\servicevhs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8658C05-CCEE-4F7E-A29C-954497DF22CA}|BRBKApp\\BRBKApp.csproj|solutionrelative:brbkapp\\da\\servicevhs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8658C05-CCEE-4F7E-A29C-954497DF22CA}|BRBKApp\\BRBKApp.csproj|d:\\proyectos\\brbkapp\\brbkapp\\viewmodels\\vhsnovedaddetalletarjaviewmodel .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8658C05-CCEE-4F7E-A29C-954497DF22CA}|BRBKApp\\BRBKApp.csproj|solutionrelative:brbkapp\\viewmodels\\vhsnovedaddetalletarjaviewmodel .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8658C05-CCEE-4F7E-A29C-954497DF22CA}|BRBKApp\\BRBKApp.csproj|d:\\proyectos\\brbkapp\\brbkapp\\viewmodels\\vhscontenedorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8658C05-CCEE-4F7E-A29C-954497DF22CA}|BRBKApp\\BRBKApp.csproj|solutionrelative:brbkapp\\viewmodels\\vhscontenedorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8658C05-CCEE-4F7E-A29C-954497DF22CA}|BRBKApp\\BRBKApp.csproj|d:\\proyectos\\brbkapp\\brbkapp\\viewmodels\\vhsagregarevidenciaentregaviewmodel .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8658C05-CCEE-4F7E-A29C-954497DF22CA}|BRBKApp\\BRBKApp.csproj|solutionrelative:brbkapp\\viewmodels\\vhsagregarevidenciaentregaviewmodel .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8658C05-CCEE-4F7E-A29C-954497DF22CA}|BRBKApp\\BRBKApp.csproj|d:\\proyectos\\brbkapp\\brbkapp\\appshell.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{A8658C05-CCEE-4F7E-A29C-954497DF22CA}|BRBKApp\\BRBKApp.csproj|solutionrelative:brbkapp\\appshell.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8658C05-CCEE-4F7E-A29C-954497DF22CA}|BRBKApp\\BRBKApp.csproj|d:\\proyectos\\brbkapp\\brbkapp\\appshell.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "RelativeMoniker": "D:0:0:{A8658C05-CCEE-4F7E-A29C-954497DF22CA}|BRBKApp\\BRBKApp.csproj|solutionrelative:brbkapp\\appshell.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8658C05-CCEE-4F7E-A29C-954497DF22CA}|BRBKApp\\BRBKApp.csproj|d:\\proyectos\\brbkapp\\brbkapp\\views\\vhsnovedaddetalletarjapage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "RelativeMoniker": "D:0:0:{A8658C05-CCEE-4F7E-A29C-954497DF22CA}|BRBKApp\\BRBKApp.csproj|solutionrelative:brbkapp\\views\\vhsnovedaddetalletarjapage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8658C05-CCEE-4F7E-A29C-954497DF22CA}|BRBKApp\\BRBKApp.csproj|d:\\proyectos\\brbkapp\\brbkapp\\views\\vhstarjaconsultadetail.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "RelativeMoniker": "D:0:0:{A8658C05-CCEE-4F7E-A29C-954497DF22CA}|BRBKApp\\BRBKApp.csproj|solutionrelative:brbkapp\\views\\vhstarjaconsultadetail.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8658C05-CCEE-4F7E-A29C-954497DF22CA}|BRBKApp\\BRBKApp.csproj|d:\\proyectos\\brbkapp\\brbkapp\\views\\vhstarjaadddetail.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "RelativeMoniker": "D:0:0:{A8658C05-CCEE-4F7E-A29C-954497DF22CA}|BRBKApp\\BRBKApp.csproj|solutionrelative:brbkapp\\views\\vhstarjaadddetail.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FADC9F3-F6E7-4162-8ECD-5597DC9145D1}|ApiModels\\ApiModels.csproj|D:\\Proyectos\\BRBKApp\\apimodels\\parametros\\parametroregistrarnovedaddetalletarja.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FADC9F3-F6E7-4162-8ECD-5597DC9145D1}|ApiModels\\ApiModels.csproj|solutionrelative:apimodels\\parametros\\parametroregistrarnovedaddetalletarja.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8658C05-CCEE-4F7E-A29C-954497DF22CA}|BRBKApp\\BRBKApp.csproj|d:\\proyectos\\brbkapp\\brbkapp\\viewmodels\\vhstarjacrearviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8658C05-CCEE-4F7E-A29C-954497DF22CA}|BRBKApp\\BRBKApp.csproj|solutionrelative:brbkapp\\viewmodels\\vhstarjacrearviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8658C05-CCEE-4F7E-A29C-954497DF22CA}|BRBKApp\\BRBKApp.csproj|d:\\proyectos\\brbkapp\\brbkapp\\brbkapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A8658C05-CCEE-4F7E-A29C-954497DF22CA}|BRBKApp\\BRBKApp.csproj|solutionrelative:brbkapp\\brbkapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8658C05-CCEE-4F7E-A29C-954497DF22CA}|BRBKApp\\BRBKApp.csproj|d:\\proyectos\\brbkapp\\brbkapp\\viewmodels\\shellviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8658C05-CCEE-4F7E-A29C-954497DF22CA}|BRBKApp\\BRBKApp.csproj|solutionrelative:brbkapp\\viewmodels\\shellviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8658C05-CCEE-4F7E-A29C-954497DF22CA}|BRBKApp\\BRBKApp.csproj|d:\\proyectos\\brbkapp\\brbkapp\\da\\datosapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8658C05-CCEE-4F7E-A29C-954497DF22CA}|BRBKApp\\BRBKApp.csproj|solutionrelative:brbkapp\\da\\datosapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FADC9F3-F6E7-4162-8ECD-5597DC9145D1}|ApiModels\\ApiModels.csproj|D:\\Proyectos\\BRBKApp\\apimodels\\parametros\\parametrosregistranovedad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FADC9F3-F6E7-4162-8ECD-5597DC9145D1}|ApiModels\\ApiModels.csproj|solutionrelative:apimodels\\parametros\\parametrosregistranovedad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8658C05-CCEE-4F7E-A29C-954497DF22CA}|BRBKApp\\BRBKApp.csproj|d:\\proyectos\\brbkapp\\brbkapp\\views\\vhsvehiculosdespachopage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8658C05-CCEE-4F7E-A29C-954497DF22CA}|BRBKApp\\BRBKApp.csproj|solutionrelative:brbkapp\\views\\vhsvehiculosdespachopage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8658C05-CCEE-4F7E-A29C-954497DF22CA}|BRBKApp\\BRBKApp.csproj|d:\\proyectos\\brbkapp\\brbkapp\\views\\vhsvehiculosdespachopage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "RelativeMoniker": "D:0:0:{A8658C05-CCEE-4F7E-A29C-954497DF22CA}|BRBKApp\\BRBKApp.csproj|solutionrelative:brbkapp\\views\\vhsvehiculosdespachopage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8658C05-CCEE-4F7E-A29C-954497DF22CA}|BRBKApp\\BRBKApp.csproj|d:\\proyectos\\brbkapp\\brbkapp\\viewmodels\\vhsvehiculosdespachoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8658C05-CCEE-4F7E-A29C-954497DF22CA}|BRBKApp\\BRBKApp.csproj|solutionrelative:brbkapp\\viewmodels\\vhsvehiculosdespachoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8658C05-CCEE-4F7E-A29C-954497DF22CA}|BRBKApp\\BRBKApp.csproj|d:\\proyectos\\brbkapp\\brbkapp\\views\\vhsagregarevidenciaentrega.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "RelativeMoniker": "D:0:0:{A8658C05-CCEE-4F7E-A29C-954497DF22CA}|BRBKApp\\BRBKApp.csproj|solutionrelative:brbkapp\\views\\vhsagregarevidenciaentrega.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8658C05-CCEE-4F7E-A29C-954497DF22CA}|BRBKApp\\BRBKApp.csproj|d:\\proyectos\\brbkapp\\brbkapp\\views\\vhsagregarevidenciaentrega.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{A8658C05-CCEE-4F7E-A29C-954497DF22CA}|BRBKApp\\BRBKApp.csproj|solutionrelative:brbkapp\\views\\vhsagregarevidenciaentrega.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8658C05-CCEE-4F7E-A29C-954497DF22CA}|BRBKApp\\BRBKApp.csproj|d:\\proyectos\\brbkapp\\brbkapp\\views\\vhstarjaadddetail.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{A8658C05-CCEE-4F7E-A29C-954497DF22CA}|BRBKApp\\BRBKApp.csproj|solutionrelative:brbkapp\\views\\vhstarjaadddetail.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FADC9F3-F6E7-4162-8ECD-5597DC9145D1}|ApiModels\\ApiModels.csproj|D:\\Proyectos\\BRBKApp\\apimodels\\appmodels\\vhsevidenciaentregafoto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FADC9F3-F6E7-4162-8ECD-5597DC9145D1}|ApiModels\\ApiModels.csproj|solutionrelative:apimodels\\appmodels\\vhsevidenciaentregafoto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FADC9F3-F6E7-4162-8ECD-5597DC9145D1}|ApiModels\\ApiModels.csproj|D:\\Proyectos\\BRBKApp\\apimodels\\parametros\\parametrovhscrearevidenciaentrega.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FADC9F3-F6E7-4162-8ECD-5597DC9145D1}|ApiModels\\ApiModels.csproj|solutionrelative:apimodels\\parametros\\parametrovhscrearevidenciaentrega.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FADC9F3-F6E7-4162-8ECD-5597DC9145D1}|ApiModels\\ApiModels.csproj|D:\\Proyectos\\BRBKApp\\apimodels\\appmodels\\vhstarjamensaje.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FADC9F3-F6E7-4162-8ECD-5597DC9145D1}|ApiModels\\ApiModels.csproj|solutionrelative:apimodels\\appmodels\\vhstarjamensaje.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8658C05-CCEE-4F7E-A29C-954497DF22CA}|BRBKApp\\BRBKApp.csproj|d:\\proyectos\\brbkapp\\brbkapp\\viewmodels\\vhstarjadetalleviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8658C05-CCEE-4F7E-A29C-954497DF22CA}|BRBKApp\\BRBKApp.csproj|solutionrelative:brbkapp\\viewmodels\\vhstarjadetalleviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FADC9F3-F6E7-4162-8ECD-5597DC9145D1}|ApiModels\\ApiModels.csproj|D:\\Proyectos\\BRBKApp\\apimodels\\parametros\\parametroregistrarevidenciaentrega.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FADC9F3-F6E7-4162-8ECD-5597DC9145D1}|ApiModels\\ApiModels.csproj|solutionrelative:apimodels\\parametros\\parametroregistrarevidenciaentrega.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8658C05-CCEE-4F7E-A29C-954497DF22CA}|BRBKApp\\BRBKApp.csproj|d:\\proyectos\\brbkapp\\brbkapp\\views\\vhstarjadetallepage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "RelativeMoniker": "D:0:0:{A8658C05-CCEE-4F7E-A29C-954497DF22CA}|BRBKApp\\BRBKApp.csproj|solutionrelative:brbkapp\\views\\vhstarjadetallepage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8658C05-CCEE-4F7E-A29C-954497DF22CA}|BRBKApp\\BRBKApp.csproj|d:\\proyectos\\brbkapp\\brbkapp\\views\\vhstarjapage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "RelativeMoniker": "D:0:0:{A8658C05-CCEE-4F7E-A29C-954497DF22CA}|BRBKApp\\BRBKApp.csproj|solutionrelative:brbkapp\\views\\vhstarjapage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8658C05-CCEE-4F7E-A29C-954497DF22CA}|BRBKApp\\BRBKApp.csproj|d:\\proyectos\\brbkapp\\brbkapp\\viewmodels\\vhstarjaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8658C05-CCEE-4F7E-A29C-954497DF22CA}|BRBKApp\\BRBKApp.csproj|solutionrelative:brbkapp\\viewmodels\\vhstarjaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8658C05-CCEE-4F7E-A29C-954497DF22CA}|BRBKApp\\BRBKApp.csproj|d:\\proyectos\\brbkapp\\brbkapp\\views\\vhstarjadetallepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8658C05-CCEE-4F7E-A29C-954497DF22CA}|BRBKApp\\BRBKApp.csproj|solutionrelative:brbkapp\\views\\vhstarjadetallepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:11:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "VHSVehiculoDespachoDA .cs",
+              "DocumentMoniker": "D:\\Proyectos\\BRBKApp\\BRBKWebApiData\\VHSVehiculoDespachoDA .cs",
+              "RelativeDocumentMoniker": "BRBKWebApiData\\VHSVehiculoDespachoDA .cs",
+              "ToolTip": "D:\\Proyectos\\BRBKApp\\BRBKWebApiData\\VHSVehiculoDespachoDA .cs",
+              "RelativeToolTip": "BRBKWebApiData\\VHSVehiculoDespachoDA .cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAmwDAAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T15:52:23.785Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "VHSEvidenciaEntregaDA.cs",
+              "DocumentMoniker": "D:\\Proyectos\\BRBKApp\\BRBKWebApiData\\VHSEvidenciaEntregaDA.cs",
+              "RelativeDocumentMoniker": "BRBKWebApiData\\VHSEvidenciaEntregaDA.cs",
+              "ToolTip": "D:\\Proyectos\\BRBKApp\\BRBKWebApiData\\VHSEvidenciaEntregaDA.cs",
+              "RelativeToolTip": "BRBKWebApiData\\VHSEvidenciaEntregaDA.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAA4wBwAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T15:51:08.606Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "VHSOrdenTrabajoDA.cs",
+              "DocumentMoniker": "D:\\Proyectos\\BRBKApp\\BRBKWebApiData\\VHSOrdenTrabajoDA.cs",
+              "RelativeDocumentMoniker": "BRBKWebApiData\\VHSOrdenTrabajoDA.cs",
+              "ToolTip": "D:\\Proyectos\\BRBKApp\\BRBKWebApiData\\VHSOrdenTrabajoDA.cs",
+              "RelativeToolTip": "BRBKWebApiData\\VHSOrdenTrabajoDA.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAcwCAAAAB5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T15:51:01.306Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "VHSContenedorViewModel.cs",
+              "DocumentMoniker": "D:\\Proyectos\\BRBKApp\\BRBKApp\\ViewModels\\VHSContenedorViewModel.cs",
+              "RelativeDocumentMoniker": "BRBKApp\\ViewModels\\VHSContenedorViewModel.cs",
+              "ToolTip": "D:\\Proyectos\\BRBKApp\\BRBKApp\\ViewModels\\VHSContenedorViewModel.cs",
+              "RelativeToolTip": "BRBKApp\\ViewModels\\VHSContenedorViewModel.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAMwGQAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T15:49:13.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "VHSNovedadDetalleTarjaViewModel .cs",
+              "DocumentMoniker": "D:\\Proyectos\\BRBKApp\\BRBKApp\\ViewModels\\VHSNovedadDetalleTarjaViewModel .cs",
+              "RelativeDocumentMoniker": "BRBKApp\\ViewModels\\VHSNovedadDetalleTarjaViewModel .cs",
+              "ToolTip": "D:\\Proyectos\\BRBKApp\\BRBKApp\\ViewModels\\VHSNovedadDetalleTarjaViewModel .cs",
+              "RelativeToolTip": "BRBKApp\\ViewModels\\VHSNovedadDetalleTarjaViewModel .cs",
+              "ViewState": "AgIAAIwAAAAAAAAAAAAMwJwAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T14:21:52.634Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "VHSTarjaAddDetail.xaml",
+              "DocumentMoniker": "D:\\Proyectos\\BRBKApp\\BRBKApp\\Views\\VHSTarjaAddDetail.xaml",
+              "RelativeDocumentMoniker": "BRBKApp\\Views\\VHSTarjaAddDetail.xaml",
+              "ToolTip": "D:\\Proyectos\\BRBKApp\\BRBKApp\\Views\\VHSTarjaAddDetail.xaml",
+              "RelativeToolTip": "BRBKApp\\Views\\VHSTarjaAddDetail.xaml",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAgwCMAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-30T15:49:44.532Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VHSTarjaConsultaDetailViewModel.cs",
+              "DocumentMoniker": "D:\\Proyectos\\BRBKApp\\BRBKApp\\ViewModels\\VHSTarjaConsultaDetailViewModel.cs",
+              "RelativeDocumentMoniker": "BRBKApp\\ViewModels\\VHSTarjaConsultaDetailViewModel.cs",
+              "ToolTip": "D:\\Proyectos\\BRBKApp\\BRBKApp\\ViewModels\\VHSTarjaConsultaDetailViewModel.cs",
+              "RelativeToolTip": "BRBKApp\\ViewModels\\VHSTarjaConsultaDetailViewModel.cs",
+              "ViewState": "AgIAAAoBAAAAAAAAAAAvwCQBAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T20:02:22.58Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VHSTarjaConsultaDetail.xaml.cs",
+              "DocumentMoniker": "D:\\Proyectos\\BRBKApp\\BRBKApp\\Views\\VHSTarjaConsultaDetail.xaml.cs",
+              "RelativeDocumentMoniker": "BRBKApp\\Views\\VHSTarjaConsultaDetail.xaml.cs",
+              "ToolTip": "D:\\Proyectos\\BRBKApp\\BRBKApp\\Views\\VHSTarjaConsultaDetail.xaml.cs",
+              "RelativeToolTip": "BRBKApp\\Views\\VHSTarjaConsultaDetail.xaml.cs",
+              "ViewState": "AgIAAIsAAAAAAAAAAAAEwI8AAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T16:08:58.416Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ServiceVHS.cs",
+              "DocumentMoniker": "D:\\Proyectos\\BRBKApp\\BRBKApp\\DA\\ServiceVHS.cs",
+              "RelativeDocumentMoniker": "BRBKApp\\DA\\ServiceVHS.cs",
+              "ToolTip": "D:\\Proyectos\\BRBKApp\\BRBKApp\\DA\\ServiceVHS.cs",
+              "RelativeToolTip": "BRBKApp\\DA\\ServiceVHS.cs",
+              "ViewState": "AgIAAO0AAAAAAAAAAAAowPQAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T14:18:27.318Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VHSTarjaDA.cs",
+              "DocumentMoniker": "D:\\Proyectos\\BRBKApp\\BRBKWebApiData\\VHSTarjaDA.cs",
+              "RelativeDocumentMoniker": "BRBKWebApiData\\VHSTarjaDA.cs",
+              "ToolTip": "D:\\Proyectos\\BRBKApp\\BRBKWebApiData\\VHSTarjaDA.cs",
+              "RelativeToolTip": "BRBKWebApiData\\VHSTarjaDA.cs",
+              "ViewState": "AgIAAK4BAAAAAAAAAAAmwLQBAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T19:42:48.6Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "VHSTarjaConsultaDetail.xaml",
+              "DocumentMoniker": "D:\\Proyectos\\BRBKApp\\BRBKApp\\Views\\VHSTarjaConsultaDetail.xaml",
+              "RelativeDocumentMoniker": "BRBKApp\\Views\\VHSTarjaConsultaDetail.xaml",
+              "ToolTip": "D:\\Proyectos\\BRBKApp\\BRBKApp\\Views\\VHSTarjaConsultaDetail.xaml",
+              "RelativeToolTip": "BRBKApp\\Views\\VHSTarjaConsultaDetail.xaml",
+              "ViewState": "AgIAAMkAAAAAAAAAAAAgwNsAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-30T16:16:00.142Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "VHSController.cs",
+              "DocumentMoniker": "D:\\Proyectos\\BRBKApp\\BRBKWebApi\\Controllers\\VHS\\VHSController.cs",
+              "RelativeDocumentMoniker": "BRBKWebApi\\Controllers\\VHS\\VHSController.cs",
+              "ToolTip": "D:\\Proyectos\\BRBKApp\\BRBKWebApi\\Controllers\\VHS\\VHSController.cs",
+              "RelativeToolTip": "BRBKWebApi\\Controllers\\VHS\\VHSController.cs",
+              "ViewState": "AgIAANACAAAAAAAAAAAMwOMCAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T17:52:59.805Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "VHSNovedadDetalleTarjaPage.xaml",
+              "DocumentMoniker": "D:\\Proyectos\\BRBKApp\\BRBKApp\\Views\\VHSNovedadDetalleTarjaPage.xaml",
+              "RelativeDocumentMoniker": "BRBKApp\\Views\\VHSNovedadDetalleTarjaPage.xaml",
+              "ToolTip": "D:\\Proyectos\\BRBKApp\\BRBKApp\\Views\\VHSNovedadDetalleTarjaPage.xaml",
+              "RelativeToolTip": "BRBKApp\\Views\\VHSNovedadDetalleTarjaPage.xaml",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAIwFoAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-04T18:35:31.455Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "VHSAgregarEvidenciaEntregaViewModel .cs",
+              "DocumentMoniker": "D:\\Proyectos\\BRBKApp\\BRBKApp\\ViewModels\\VHSAgregarEvidenciaEntregaViewModel .cs",
+              "RelativeDocumentMoniker": "BRBKApp\\ViewModels\\VHSAgregarEvidenciaEntregaViewModel .cs",
+              "ToolTip": "D:\\Proyectos\\BRBKApp\\BRBKApp\\ViewModels\\VHSAgregarEvidenciaEntregaViewModel .cs",
+              "RelativeToolTip": "BRBKApp\\ViewModels\\VHSAgregarEvidenciaEntregaViewModel .cs",
+              "ViewState": "AgIAAMMAAAAAAAAAAAAMwNMAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T16:33:12.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AppShell.xaml",
+              "DocumentMoniker": "D:\\Proyectos\\BRBKApp\\BRBKApp\\AppShell.xaml",
+              "RelativeDocumentMoniker": "BRBKApp\\AppShell.xaml",
+              "ToolTip": "D:\\Proyectos\\BRBKApp\\BRBKApp\\AppShell.xaml",
+              "RelativeToolTip": "BRBKApp\\AppShell.xaml",
+              "ViewState": "AgIAANQAAAAAAAAAAAAIwO0AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-04T14:52:03.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AppShell.xaml.cs",
+              "DocumentMoniker": "D:\\Proyectos\\BRBKApp\\BRBKApp\\AppShell.xaml.cs",
+              "RelativeDocumentMoniker": "BRBKApp\\AppShell.xaml.cs",
+              "ToolTip": "D:\\Proyectos\\BRBKApp\\BRBKApp\\AppShell.xaml.cs",
+              "RelativeToolTip": "BRBKApp\\AppShell.xaml.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAmwEMAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-02T21:26:02.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "VHSTarjaCrearViewModel.cs",
+              "DocumentMoniker": "D:\\Proyectos\\BRBKApp\\BRBKApp\\ViewModels\\VHSTarjaCrearViewModel.cs",
+              "RelativeDocumentMoniker": "BRBKApp\\ViewModels\\VHSTarjaCrearViewModel.cs",
+              "ToolTip": "D:\\Proyectos\\BRBKApp\\BRBKApp\\ViewModels\\VHSTarjaCrearViewModel.cs",
+              "RelativeToolTip": "BRBKApp\\ViewModels\\VHSTarjaCrearViewModel.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAD4v0UAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T14:18:27.3Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "BRBKApp.csproj",
+              "DocumentMoniker": "D:\\Proyectos\\BRBKApp\\BRBKApp\\BRBKApp.csproj",
+              "RelativeDocumentMoniker": "BRBKApp\\BRBKApp.csproj",
+              "ToolTip": "D:\\Proyectos\\BRBKApp\\BRBKApp\\BRBKApp.csproj",
+              "RelativeToolTip": "BRBKApp\\BRBKApp.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-04T17:28:23.669Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ParametroRegistrarNovedadDetalleTarja.cs",
+              "DocumentMoniker": "D:\\Proyectos\\BRBKApp\\ApiModels\\Parametros\\ParametroRegistrarNovedadDetalleTarja.cs",
+              "RelativeDocumentMoniker": "ApiModels\\Parametros\\ParametroRegistrarNovedadDetalleTarja.cs",
+              "ToolTip": "D:\\Proyectos\\BRBKApp\\ApiModels\\Parametros\\ParametroRegistrarNovedadDetalleTarja.cs",
+              "RelativeToolTip": "ApiModels\\Parametros\\ParametroRegistrarNovedadDetalleTarja.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T19:41:55.073Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ShellViewModel.cs",
+              "DocumentMoniker": "D:\\Proyectos\\BRBKApp\\BRBKApp\\ViewModels\\ShellViewModel.cs",
+              "RelativeDocumentMoniker": "BRBKApp\\ViewModels\\ShellViewModel.cs",
+              "ToolTip": "D:\\Proyectos\\BRBKApp\\BRBKApp\\ViewModels\\ShellViewModel.cs",
+              "RelativeToolTip": "BRBKApp\\ViewModels\\ShellViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T17:47:21.832Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ParametrosRegistraNovedad.cs",
+              "DocumentMoniker": "D:\\Proyectos\\BRBKApp\\ApiModels\\Parametros\\ParametrosRegistraNovedad.cs",
+              "RelativeDocumentMoniker": "ApiModels\\Parametros\\ParametrosRegistraNovedad.cs",
+              "ToolTip": "D:\\Proyectos\\BRBKApp\\ApiModels\\Parametros\\ParametrosRegistraNovedad.cs",
+              "RelativeToolTip": "ApiModels\\Parametros\\ParametrosRegistraNovedad.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-02T21:44:54.752Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "DatosApi.cs",
+              "DocumentMoniker": "D:\\Proyectos\\BRBKApp\\BRBKApp\\DA\\DatosApi.cs",
+              "RelativeDocumentMoniker": "BRBKApp\\DA\\DatosApi.cs",
+              "ToolTip": "D:\\Proyectos\\BRBKApp\\BRBKApp\\DA\\DatosApi.cs",
+              "RelativeToolTip": "BRBKApp\\DA\\DatosApi.cs",
+              "ViewState": "AgIAAFIBAAAAAAAAAAAUwHYBAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-02T21:45:25.328Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "VHSVehiculosDespachoPage.xaml.cs",
+              "DocumentMoniker": "D:\\Proyectos\\BRBKApp\\BRBKApp\\Views\\VHSVehiculosDespachoPage.xaml.cs",
+              "RelativeDocumentMoniker": "BRBKApp\\Views\\VHSVehiculosDespachoPage.xaml.cs",
+              "ToolTip": "D:\\Proyectos\\BRBKApp\\BRBKApp\\Views\\VHSVehiculosDespachoPage.xaml.cs",
+              "RelativeToolTip": "BRBKApp\\Views\\VHSVehiculosDespachoPage.xaml.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAADwvxoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T14:18:27.35Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "VHSAgregarEvidenciaEntrega.xaml.cs",
+              "DocumentMoniker": "D:\\Proyectos\\BRBKApp\\BRBKApp\\Views\\VHSAgregarEvidenciaEntrega.xaml.cs",
+              "RelativeDocumentMoniker": "BRBKApp\\Views\\VHSAgregarEvidenciaEntrega.xaml.cs",
+              "ToolTip": "D:\\Proyectos\\BRBKApp\\BRBKApp\\Views\\VHSAgregarEvidenciaEntrega.xaml.cs",
+              "RelativeToolTip": "BRBKApp\\Views\\VHSAgregarEvidenciaEntrega.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T16:31:35.769Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "VHSVehiculosDespachoPage.xaml",
+              "DocumentMoniker": "D:\\Proyectos\\BRBKApp\\BRBKApp\\Views\\VHSVehiculosDespachoPage.xaml",
+              "RelativeDocumentMoniker": "BRBKApp\\Views\\VHSVehiculosDespachoPage.xaml",
+              "ToolTip": "D:\\Proyectos\\BRBKApp\\BRBKApp\\Views\\VHSVehiculosDespachoPage.xaml",
+              "RelativeToolTip": "BRBKApp\\Views\\VHSVehiculosDespachoPage.xaml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAwEAAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-01T13:45:55.35Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "VHSAgregarEvidenciaEntrega.xaml",
+              "DocumentMoniker": "D:\\Proyectos\\BRBKApp\\BRBKApp\\Views\\VHSAgregarEvidenciaEntrega.xaml",
+              "RelativeDocumentMoniker": "BRBKApp\\Views\\VHSAgregarEvidenciaEntrega.xaml",
+              "ToolTip": "D:\\Proyectos\\BRBKApp\\BRBKApp\\Views\\VHSAgregarEvidenciaEntrega.xaml",
+              "RelativeToolTip": "BRBKApp\\Views\\VHSAgregarEvidenciaEntrega.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-30T16:24:06.712Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "VHSVehiculosDespachoViewModel.cs",
+              "DocumentMoniker": "D:\\Proyectos\\BRBKApp\\BRBKApp\\ViewModels\\VHSVehiculosDespachoViewModel.cs",
+              "RelativeDocumentMoniker": "BRBKApp\\ViewModels\\VHSVehiculosDespachoViewModel.cs",
+              "ToolTip": "D:\\Proyectos\\BRBKApp\\BRBKApp\\ViewModels\\VHSVehiculosDespachoViewModel.cs",
+              "RelativeToolTip": "BRBKApp\\ViewModels\\VHSVehiculosDespachoViewModel.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAwwC4AAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T13:48:10.543Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "VHSTarjaAddDetail.xaml.cs",
+              "DocumentMoniker": "D:\\Proyectos\\BRBKApp\\BRBKApp\\Views\\VHSTarjaAddDetail.xaml.cs",
+              "RelativeDocumentMoniker": "BRBKApp\\Views\\VHSTarjaAddDetail.xaml.cs",
+              "ToolTip": "D:\\Proyectos\\BRBKApp\\BRBKApp\\Views\\VHSTarjaAddDetail.xaml.cs",
+              "RelativeToolTip": "BRBKApp\\Views\\VHSTarjaAddDetail.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T15:50:44.74Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "VHSEvidenciaEntregaFoto.cs",
+              "DocumentMoniker": "D:\\Proyectos\\BRBKApp\\ApiModels\\AppModels\\VHSEvidenciaEntregaFoto.cs",
+              "RelativeDocumentMoniker": "ApiModels\\AppModels\\VHSEvidenciaEntregaFoto.cs",
+              "ToolTip": "D:\\Proyectos\\BRBKApp\\ApiModels\\AppModels\\VHSEvidenciaEntregaFoto.cs",
+              "RelativeToolTip": "ApiModels\\AppModels\\VHSEvidenciaEntregaFoto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T17:26:05.411Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ParametroVHSCrearEvidenciaEntrega.cs",
+              "DocumentMoniker": "D:\\Proyectos\\BRBKApp\\ApiModels\\Parametros\\ParametroVHSCrearEvidenciaEntrega.cs",
+              "RelativeDocumentMoniker": "ApiModels\\Parametros\\ParametroVHSCrearEvidenciaEntrega.cs",
+              "ToolTip": "D:\\Proyectos\\BRBKApp\\ApiModels\\Parametros\\ParametroVHSCrearEvidenciaEntrega.cs",
+              "RelativeToolTip": "ApiModels\\Parametros\\ParametroVHSCrearEvidenciaEntrega.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T17:23:59.642Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "VHSTarjaMensaje.cs",
+              "DocumentMoniker": "D:\\Proyectos\\BRBKApp\\ApiModels\\AppModels\\VHSTarjaMensaje.cs",
+              "RelativeDocumentMoniker": "ApiModels\\AppModels\\VHSTarjaMensaje.cs",
+              "ToolTip": "D:\\Proyectos\\BRBKApp\\ApiModels\\AppModels\\VHSTarjaMensaje.cs",
+              "RelativeToolTip": "ApiModels\\AppModels\\VHSTarjaMensaje.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T14:43:07.466Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "VHSTarjaDetalleViewModel.cs",
+              "DocumentMoniker": "D:\\Proyectos\\BRBKApp\\BRBKApp\\ViewModels\\VHSTarjaDetalleViewModel.cs",
+              "RelativeDocumentMoniker": "BRBKApp\\ViewModels\\VHSTarjaDetalleViewModel.cs",
+              "ToolTip": "D:\\Proyectos\\BRBKApp\\BRBKApp\\ViewModels\\VHSTarjaDetalleViewModel.cs",
+              "RelativeToolTip": "BRBKApp\\ViewModels\\VHSTarjaDetalleViewModel.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAAwHgAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T16:56:36.801Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "VHSTarjaPage.xaml",
+              "DocumentMoniker": "D:\\Proyectos\\BRBKApp\\BRBKApp\\Views\\VHSTarjaPage.xaml",
+              "RelativeDocumentMoniker": "BRBKApp\\Views\\VHSTarjaPage.xaml",
+              "ToolTip": "D:\\Proyectos\\BRBKApp\\BRBKApp\\Views\\VHSTarjaPage.xaml",
+              "RelativeToolTip": "BRBKApp\\Views\\VHSTarjaPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAABiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-30T16:58:17.876Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "VHSTarjaViewModel.cs",
+              "DocumentMoniker": "D:\\Proyectos\\BRBKApp\\BRBKApp\\ViewModels\\VHSTarjaViewModel.cs",
+              "RelativeDocumentMoniker": "BRBKApp\\ViewModels\\VHSTarjaViewModel.cs",
+              "ToolTip": "D:\\Proyectos\\BRBKApp\\BRBKApp\\ViewModels\\VHSTarjaViewModel.cs",
+              "RelativeToolTip": "BRBKApp\\ViewModels\\VHSTarjaViewModel.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAA6wFYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T16:59:58.846Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "ParametroRegistrarEvidenciaEntrega.cs",
+              "DocumentMoniker": "D:\\Proyectos\\BRBKApp\\ApiModels\\Parametros\\ParametroRegistrarEvidenciaEntrega.cs",
+              "RelativeDocumentMoniker": "ApiModels\\Parametros\\ParametroRegistrarEvidenciaEntrega.cs",
+              "ToolTip": "D:\\Proyectos\\BRBKApp\\ApiModels\\Parametros\\ParametroRegistrarEvidenciaEntrega.cs",
+              "RelativeToolTip": "ApiModels\\Parametros\\ParametroRegistrarEvidenciaEntrega.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T14:03:42.605Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "VHSTarjaDetallePage.xaml",
+              "DocumentMoniker": "D:\\Proyectos\\BRBKApp\\BRBKApp\\Views\\VHSTarjaDetallePage.xaml",
+              "RelativeDocumentMoniker": "BRBKApp\\Views\\VHSTarjaDetallePage.xaml",
+              "ToolTip": "D:\\Proyectos\\BRBKApp\\BRBKApp\\Views\\VHSTarjaDetallePage.xaml",
+              "RelativeToolTip": "BRBKApp\\Views\\VHSTarjaDetallePage.xaml",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAwBsAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-30T18:26:30.397Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "VHSTarjaDetallePage.xaml.cs",
+              "DocumentMoniker": "D:\\Proyectos\\BRBKApp\\BRBKApp\\Views\\VHSTarjaDetallePage.xaml.cs",
+              "RelativeDocumentMoniker": "BRBKApp\\Views\\VHSTarjaDetallePage.xaml.cs",
+              "ToolTip": "D:\\Proyectos\\BRBKApp\\BRBKApp\\Views\\VHSTarjaDetallePage.xaml.cs",
+              "RelativeToolTip": "BRBKApp\\Views\\VHSTarjaDetallePage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T17:53:08.037Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

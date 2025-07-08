@@ -1,0 +1,11 @@
+D:\Proyectos\BRBKApp\N4Ws\bin\Debug\N4Ws.dll
+D:\Proyectos\BRBKApp\N4Ws\bin\Debug\N4Ws.pdb
+D:\Proyectos\BRBKApp\N4Ws\bin\Debug\AccesoDatos.dll
+D:\Proyectos\BRBKApp\N4Ws\bin\Debug\Configuraciones.dll
+D:\Proyectos\BRBKApp\N4Ws\bin\Debug\AccesoDatos.pdb
+D:\Proyectos\BRBKApp\N4Ws\bin\Debug\Configuraciones.pdb
+D:\Proyectos\BRBKApp\N4Ws\obj\Debug\N4Ws.csproj.AssemblyReference.cache
+D:\Proyectos\BRBKApp\N4Ws\obj\Debug\N4Ws.csproj.CoreCompileInputs.cache
+D:\Proyectos\BRBKApp\N4Ws\obj\Debug\N4Ws.csproj.Up2Date
+D:\Proyectos\BRBKApp\N4Ws\obj\Debug\N4Ws.dll
+D:\Proyectos\BRBKApp\N4Ws\obj\Debug\N4Ws.pdb

@@ -1,0 +1,232 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Services\IBluetoothService.cs" />
+    <Compile Remove="ViewModels\ContainersPesajeViewModel.cs" />
+    <Compile Remove="ViewModels\VBSNewDetailViewModel1.cs" />
+    <Compile Remove="ViewModels\VBSOrderDispatchNewViewModel.cs" />
+    <Compile Remove="Views\ContainersPesajePage.xaml.cs" />
+    <Compile Remove="Views\VBSNewDetail1.xaml.cs" />
+    <Compile Remove="Views\VBSOrderDispatchNewPage.xaml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="Views\ContainersPesajePage.xaml" />
+    <EmbeddedResource Remove="Views\VBSNewDetail1.xaml" />
+    <EmbeddedResource Remove="Views\VBSOrderDispatchNewPage.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>  
+    <PackageReference Include="Acr.UserDialogs" Version="7.1.0.514" />  
+    <PackageReference Include="Plugin.Permissions" Version="6.0.1" />  
+    <PackageReference Include="sqlite-net-pcl" Version="1.7.335" />  
+    <PackageReference Include="Xam.Plugin.Geolocator" Version="4.5.0.6" />  
+    <PackageReference Include="Xam.Plugin.Media" Version="5.0.1" />  
+    <PackageReference Include="Xamarin.CommunityToolkit" Version="1.1.0" />  
+    <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />  
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />  
+    <PackageReference Include="Xamarin.Forms.PancakeView" Version="2.3.0.759" />  
+    <PackageReference Include="Zebra.Printer.SDK" Version="2.16.2905" />  
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ApiDatos\ApiDatos.csproj" />
+    <ProjectReference Include="..\ApiModels\ApiModels.csproj" />
+    <ProjectReference Include="..\ViewModel\ViewModel.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Mono.Android">
+      <HintPath>C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\ReferenceAssemblies\Microsoft\Framework\MonoAndroid\v11.0\Mono.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Views\VBSDispatchPage.xaml.cs">
+      <DependentUpon>VBSDispatchPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\VBSPreDispatchDetailsPage.xaml.cs">
+      <DependentUpon>VBSPreDispatchDetailsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\VBSPreDispatchProcessPage.xaml.cs">
+      <DependentUpon>VBSPreDispatchProcessPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\VBSPreDispatchInboxPage.xaml.cs">
+      <DependentUpon>VBSPreDispatchInboxPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\VBSCheckLoadPage.xaml.cs">
+      <DependentUpon>VBSCheckLoadPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\VBSAssignsPositionPage.xaml.cs">
+      <DependentUpon>VBSAssignsPositionPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\DispatchPage.xaml.cs">
+      <DependentUpon>DispatchPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\VBSOrderDispatchNewOrder.xaml.cs">
+      <DependentUpon>VBSOrderDispatchNewOrder.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\VBSOrderDispatchInboxPage.xaml.cs">
+      <DependentUpon>VBSOrderDispatchInboxPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\VBSNewDetail.xaml.cs">
+      <DependentUpon>VBSNewDetail.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\FclSealYardValidationPage.xaml.cs">
+      <DependentUpon>FclSealYardValidationPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\FclSealAssignsPage.xaml.cs">
+      <DependentUpon>FclSealAssignsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\FclSealAforoPage.xaml.cs">
+      <DependentUpon>FclSealAforoPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\FclSealPreEmbarquePage.xaml.cs">
+      <DependentUpon>FclSealPreEmbarquePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\VBSOrderDispatchDetailsPage.xaml.cs">
+      <DependentUpon>VBSOrderDispatchDetailsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\VBSTaskDetails.xaml.cs">
+      <DependentUpon>VBSTaskDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\VBSInboxAisvPage.xaml.cs">
+      <DependentUpon>VBSInboxAisvPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\MtySealRegistersPage.xaml.cs">
+      <DependentUpon>MtySealRegistersPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\MtyPOWPage.xaml.cs">
+      <DependentUpon>MtyPOWPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\DownloadConfirmationPage.xaml.cs">
+      <DependentUpon>DownloadConfirmationPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\MtySealValidationPage.xaml.cs">
+      <DependentUpon>MtySealValidationPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\HomePage.xaml.cs">
+      <DependentUpon>HomePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\VHSOrdenTrabajoPage.xaml.cs">
+      <DependentUpon>VHSOrdenTrabajoPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\VHSTarjaPage.xaml.cs">
+      <DependentUpon>VHSTarjaPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\VHSTarjaDetallePage.xaml.cs">
+      <DependentUpon>VHSTarjaDetallePage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Views\AlertReportPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\EditDetail.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\FclSealYardValidationPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\FclSealAssignsPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\ImageZoomPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\InboxPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\FclSealAforoPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\FclSealPreEmbarquePage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\MtySealRegistersPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\MtyPOWPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\DownloadConfirmationPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\MtySealValidationPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\HomePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\StartupPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\TaskDetails.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\UpdateDetail.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\VBSShipmentDetailsNewPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\VBSShipmentDetailsPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\VBSShipmentInboxNewPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\VBSShipmentInboxPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\VHSAgregarEvidenciaEntrega.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\VHSContenedorPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\VHSNovedadDetalleTarjaPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\VHSOrdenTrabajoPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\VHSTarjaAddDetail.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\VHSTarjaConsultaDetail.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\VHSTarjaCrear.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\VHSTarjaPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\VHSTarjaDetallePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\VHSTarjaPhotos.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\VHSVehiculosDespachoPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

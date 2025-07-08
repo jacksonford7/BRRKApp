@@ -1,0 +1,9 @@
+D:\Proyectos\BRBKApp\Configuraciones\bin\Debug\Configuraciones.dll
+D:\Proyectos\BRBKApp\Configuraciones\bin\Debug\Configuraciones.pdb
+D:\Proyectos\BRBKApp\Configuraciones\bin\Debug\AccesoDatos.dll
+D:\Proyectos\BRBKApp\Configuraciones\bin\Debug\AccesoDatos.pdb
+D:\Proyectos\BRBKApp\Configuraciones\obj\Debug\Configuraciones.csproj.AssemblyReference.cache
+D:\Proyectos\BRBKApp\Configuraciones\obj\Debug\Configuraciones.csproj.CoreCompileInputs.cache
+D:\Proyectos\BRBKApp\Configuraciones\obj\Debug\Configur.4999CB62.Up2Date
+D:\Proyectos\BRBKApp\Configuraciones\obj\Debug\Configuraciones.dll
+D:\Proyectos\BRBKApp\Configuraciones\obj\Debug\Configuraciones.pdb
