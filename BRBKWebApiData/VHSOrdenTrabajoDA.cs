@@ -30,7 +30,7 @@ namespace BRBKWebApiData
             OnInit(_dbname);
             parametros.Clear();
 
-            List<VHSOrdenTrabajo> list = sql_puntero.ExecuteSelectControl<VHSOrdenTrabajo>(nueva_conexion, 4000, "[cedi].lista_order_trabajo_pendientes", parametros, out OnError);
+            List<VHSOrdenTrabajo> list = sql_puntero.ExecuteSelectControl<VHSOrdenTrabajo>(nueva_conexion, 4000, "[vhs].lista_order_trabajo_pendientes", parametros, out OnError);
             
             return list;
         }
