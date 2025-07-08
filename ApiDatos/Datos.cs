@@ -4065,6 +4065,54 @@ namespace ApiDatos
             return respuesta;
         }
 
+        public async Task<RespuestaViewModel<List<CediOrdenTrabajo>>> GetCediOrdenesTrabajoAsync()
+        {
+            HttpClientHandler handler = new HttpClientHandler();
+            RespuestaViewModel<List<CediOrdenTrabajo>> respuesta = new RespuestaViewModel<List<CediOrdenTrabajo>>();
+            var _params = new string[] { };
+            try
+            {
+                using (var client = new HttpClient(handler, false))
+                {
+                    client.BaseAddress = new Uri(Baseurl + "api/cedi_ordenes_trabajo");
+                    client.DefaultRequestHeaders.Clear();
+                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+                    var postTask = client.PostAsJsonAsync("cedi_ordenes_trabajo", new { }).ConfigureAwait(false);
+                    var result = await postTask;
+                    if (result.IsSuccessStatusCode)
+                    {
+                        var readTask = await result.Content.ReadAsStringAsync();
+
+                        respuesta = JsonConvert.DeserializeObject<RespuestaViewModel<List<CediOrdenTrabajo>>>(readTask);
+                    }
+                    else
+                    {
+                        respuestaVie = new ResultadoViewModel();
+                        respuestaVie.Respuesta = false;
+                        respuestaVie.Titulo = "Error";
+                        respuestaVie.TipoMensaje = Enumerados.TipoMensaje.Error;
+                        List<String> mensaje = new List<string>();
+                        mensaje.Add(string.Format("Error: " + result.StatusCode.ToString() + " El servidor retorna mensaje: " + result.ReasonPhrase.ToString()));
+                        respuestaVie.Mensajes = mensaje;
+                        respuesta.Resultado = respuestaVie;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                respuestaVie = new ResultadoViewModel();
+                respuestaVie.Respuesta = false;
+                respuestaVie.Titulo = "Error";
+                respuestaVie.TipoMensaje = Enumerados.TipoMensaje.Error;
+                List<String> mensaje = new List<string>();
+                mensaje.Add(string.Format("Error al conectarse con el servidor - Comunicarse con el área de Sistemas: " + ex.Message));
+                respuestaVie.Mensajes = mensaje;
+                respuesta.Resultado = respuestaVie;
+            }
+            return respuesta;
+        }
+
         public async Task<RespuestaViewModel<VHSTarjaModel>> RegistrarTarjaAsync(ParametroVHSCreaTarja tarja)
         {
             HttpClientHandler handler = new HttpClientHandler();
@@ -4109,6 +4157,46 @@ namespace ApiDatos
             catch (Exception)
             {
 
+                throw;
+            }
+            return respuesta;
+        }
+
+        public async Task<RespuestaViewModel<CediTarjaModel>> RegistrarCediTarjaAsync(ParametroVHSCreaTarja tarja)
+        {
+            HttpClientHandler handler = new HttpClientHandler();
+            RespuestaViewModel<CediTarjaModel> respuesta = new RespuestaViewModel<CediTarjaModel>();
+            try
+            {
+                using (var client = new HttpClient(handler, false))
+                {
+                    client.BaseAddress = new Uri(Baseurl + "api/cedi_registraTarja");
+                    client.DefaultRequestHeaders.Clear();
+                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+                    var postTask = client.PostAsJsonAsync("cedi_registraTarja", tarja).ConfigureAwait(false);
+                    var result = await postTask;
+
+                    if (result.IsSuccessStatusCode)
+                    {
+                        var readTask = await result.Content.ReadAsStringAsync();
+                        respuesta = JsonConvert.DeserializeObject<RespuestaViewModel<CediTarjaModel>>(readTask);
+                    }
+                    else
+                    {
+                        respuestaVie = new ResultadoViewModel();
+                        respuestaVie.Respuesta = false;
+                        respuestaVie.Titulo = "Error";
+                        respuestaVie.TipoMensaje = Enumerados.TipoMensaje.Error;
+                        List<String> mensaje = new List<string>();
+                        mensaje.Add(string.Format("Error: " + result.StatusCode.ToString() + " El servidor retorna mensaje: " + result.ReasonPhrase.ToString()));
+                        respuestaVie.Mensajes = mensaje;
+                        respuesta.Resultado = respuestaVie;
+                    }
+                }
+            }
+            catch (Exception)
+            {
                 throw;
             }
             return respuesta;
@@ -4161,6 +4249,51 @@ namespace ApiDatos
             return respuesta;
         }
 
+        public async Task<RespuestaViewModel<List<CediTarjaMensaje>>> GetCediTarjaPendienteAsync(bool filtrar, int idOrden)
+        {
+            HttpClientHandler handler = new HttpClientHandler();
+            RespuestaViewModel<List<CediTarjaMensaje>> respuesta = new RespuestaViewModel<List<CediTarjaMensaje>>();
+            var _params = new ParametroVHSListaTarjaPendiente()
+            {
+                Filtrar = filtrar,
+                OrdenTrabajoId = idOrden,
+            };
+            try
+            {
+                using (var client = new HttpClient(handler, false))
+                {
+                    client.BaseAddress = new Uri(Baseurl + "api/cedi_tarjas");
+                    client.DefaultRequestHeaders.Clear();
+                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+                    var postTask = client.PostAsJsonAsync("cedi_tarjas", _params).ConfigureAwait(false);
+                    var result = await postTask;
+                    if (result.IsSuccessStatusCode)
+                    {
+                        var readTask = await result.Content.ReadAsStringAsync();
+
+                        respuesta = JsonConvert.DeserializeObject<RespuestaViewModel<List<CediTarjaMensaje>>>(readTask);
+                    }
+                    else
+                    {
+                        respuestaVie = new ResultadoViewModel();
+                        respuestaVie.Respuesta = false;
+                        respuestaVie.Titulo = "Error";
+                        respuestaVie.TipoMensaje = Enumerados.TipoMensaje.Error;
+                        List<String> mensaje = new List<string>();
+                        mensaje.Add(string.Format("Error: " + result.StatusCode.ToString() + " El servidor retorna mensaje: " + result.ReasonPhrase.ToString()));
+                        respuestaVie.Mensajes = mensaje;
+                        respuesta.Resultado = respuestaVie;
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            return respuesta;
+        }
+
         public async Task<RespuestaViewModel<List<VHSTarjaMensaje>>> GetTarjaDetailAsync(int idOrdenTrabajo)
         {
             HttpClientHandler handler = new HttpClientHandler();
@@ -4207,6 +4340,50 @@ namespace ApiDatos
             return respuesta;
         }
 
+        public async Task<RespuestaViewModel<List<CediTarjaMensaje>>> GetCediTarjaDetailAsync(int idOrdenTrabajo)
+        {
+            HttpClientHandler handler = new HttpClientHandler();
+            RespuestaViewModel<List<CediTarjaMensaje>> respuesta = new RespuestaViewModel<List<CediTarjaMensaje>>();
+            ParametroVHSTarjaDetalle parametro = new ParametroVHSTarjaDetalle()
+            {
+                OrdenTrabajoId = idOrdenTrabajo,
+            };
+            try
+            {
+                using (var client = new HttpClient(handler, false))
+                {
+                    client.BaseAddress = new Uri(Baseurl + "api/cedi_tarjaDetalle");
+                    client.DefaultRequestHeaders.Clear();
+                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+                    var postTask = client.PostAsJsonAsync("cedi_tarjaDetalle", parametro).ConfigureAwait(false);
+                    var result = await postTask;
+                    if (result.IsSuccessStatusCode)
+                    {
+                        var readTask = await result.Content.ReadAsStringAsync();
+
+                        respuesta = JsonConvert.DeserializeObject<RespuestaViewModel<List<CediTarjaMensaje>>>(readTask);
+                    }
+                    else
+                    {
+                        respuestaVie = new ResultadoViewModel();
+                        respuestaVie.Respuesta = false;
+                        respuestaVie.Titulo = "Error";
+                        respuestaVie.TipoMensaje = Enumerados.TipoMensaje.Error;
+                        List<String> mensaje = new List<string>();
+                        mensaje.Add(string.Format("Error: " + result.StatusCode.ToString() + " El servidor retorna mensaje: " + result.ReasonPhrase.ToString()));
+                        respuestaVie.Mensajes = mensaje;
+                        respuesta.Resultado = respuestaVie;
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            return respuesta;
+        }
+
         public async Task<RespuestaViewModel<VHSTarjaDetalleMensaje>> AddTarjaDetailAsync(ParametroVHSTarjaDetalleAdd parametro)
         {
             HttpClientHandler handler = new HttpClientHandler();
@@ -4244,6 +4421,46 @@ namespace ApiDatos
             catch (Exception)
             {
 
+                throw;
+            }
+            return respuesta;
+        }
+
+        public async Task<RespuestaViewModel<CediTarjaDetalleMensaje>> AddCediTarjaDetailAsync(ParametroVHSTarjaDetalleAdd parametro)
+        {
+            HttpClientHandler handler = new HttpClientHandler();
+            RespuestaViewModel<CediTarjaDetalleMensaje> respuesta = new RespuestaViewModel<CediTarjaDetalleMensaje>();
+            try
+            {
+                using (var client = new HttpClient(handler, false))
+                {
+                    client.BaseAddress = new Uri(Baseurl + "api/cedi_tarjaAgregaDetalle");
+                    client.DefaultRequestHeaders.Clear();
+                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+                    var postTask = client.PostAsJsonAsync("cedi_tarjaAgregaDetalle", parametro).ConfigureAwait(false);
+                    var result = await postTask;
+                    if (result.IsSuccessStatusCode)
+                    {
+                        var readTask = await result.Content.ReadAsStringAsync();
+
+                        respuesta = JsonConvert.DeserializeObject<RespuestaViewModel<CediTarjaDetalleMensaje>>(readTask);
+                    }
+                    else
+                    {
+                        respuestaVie = new ResultadoViewModel();
+                        respuestaVie.Respuesta = false;
+                        respuestaVie.Titulo = "Error";
+                        respuestaVie.TipoMensaje = Enumerados.TipoMensaje.Error;
+                        List<String> mensaje = new List<string>();
+                        mensaje.Add(string.Format("Error: " + result.StatusCode.ToString() + " El servidor retorna mensaje: " + result.ReasonPhrase.ToString()));
+                        respuestaVie.Mensajes = mensaje;
+                        respuesta.Resultado = respuestaVie;
+                    }
+                }
+            }
+            catch (Exception)
+            {
                 throw;
             }
             return respuesta;
@@ -4298,6 +4515,50 @@ namespace ApiDatos
             return respuesta;
         }
 
+        public async Task<RespuestaViewModel<AppModelCediTarjaDetalle>> GetCediTarjaDetailByIdAsync(long detalleTarjaId)
+        {
+            HttpClientHandler handler = new HttpClientHandler();
+            RespuestaViewModel<AppModelCediTarjaDetalle> respuesta = new RespuestaViewModel<AppModelCediTarjaDetalle>();
+            try
+            {
+                using (var client = new HttpClient(handler, false))
+                {
+                    client.BaseAddress = new Uri("http://localhost:4346/");
+                    client.DefaultRequestHeaders.Clear();
+                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+                    var response = await client.GetAsync($"api/cedi_tarjaConsultaDetalle?detalleTarjaId={detalleTarjaId}");
+                    var responseContent = await response.Content.ReadAsStringAsync();
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        respuesta = JsonConvert.DeserializeObject<RespuestaViewModel<AppModelCediTarjaDetalle>>(responseContent);
+                    }
+                    else
+                    {
+                        respuesta.Resultado = new ResultadoViewModel
+                        {
+                            Respuesta = false,
+                            Titulo = "Error",
+                            TipoMensaje = Enumerados.TipoMensaje.Error,
+                            Mensajes = new List<string> { $"Error: {response.StatusCode} - {response.ReasonPhrase} - Detalle: {responseContent}" }
+                        };
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                respuesta.Resultado = new ResultadoViewModel
+                {
+                    Respuesta = false,
+                    Titulo = "Error",
+                    TipoMensaje = Enumerados.TipoMensaje.Error,
+                    Mensajes = new List<string> { $"Excepción: {ex.Message}" }
+                };
+            }
+            return respuesta;
+        }
+
         private AppModelVHSTarjaDetalle MapToAppModel(ApiModels.AppModels.AppModelVHSTarjaDetalle apiModel)
         {
             if (apiModel == null) return null;
@@ -4341,6 +4602,48 @@ namespace ApiDatos
                     {
                         var content = await response.Content.ReadAsStringAsync();
                         returnValue = JsonConvert.DeserializeObject<RespuestaViewModel<VHSTarjaDetalleMensaje>>(content);
+                    }
+                    else
+                    {
+                        returnValue.Resultado = new ResultadoViewModel
+                        {
+                            Respuesta = false,
+                            Titulo = "Error",
+                            TipoMensaje = Enumerados.TipoMensaje.Error,
+                            Mensajes = new List<string> { $"Error: {response.StatusCode} - {response.ReasonPhrase}" }
+                        };
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                returnValue.Resultado = new ResultadoViewModel
+                {
+                    Respuesta = false,
+                    Titulo = "Error",
+                    TipoMensaje = Enumerados.TipoMensaje.Error,
+                    Mensajes = new List<string> { ex.Message }
+                };
+            }
+            return returnValue;
+        }
+
+        public async Task<RespuestaViewModel<CediTarjaDetalleMensaje>> GetCediTarjaDetailsById(int detalleTarjaId)
+        {
+            RespuestaViewModel<CediTarjaDetalleMensaje> returnValue = new RespuestaViewModel<CediTarjaDetalleMensaje>();
+            try
+            {
+                using (var client = new HttpClient())
+                {
+                    client.BaseAddress = new Uri(Baseurl);
+                    client.DefaultRequestHeaders.Clear();
+                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+                    var response = await client.GetAsync($"api/cedi_tarjaConsultaDetalle?detalleTarjaId={detalleTarjaId}");
+                    if (response.IsSuccessStatusCode)
+                    {
+                        var content = await response.Content.ReadAsStringAsync();
+                        returnValue = JsonConvert.DeserializeObject<RespuestaViewModel<CediTarjaDetalleMensaje>>(content);
                     }
                     else
                     {
@@ -4469,6 +4772,84 @@ namespace ApiDatos
             }
             return respuesta;
         }
+
+        public async Task<RespuestaViewModel<CediTarjaDetalleMensaje>> UpdateCediTarjaDetailAsync(ParametroVHSTarjaDetalleUpdate parametro)
+        {
+            HttpClientHandler handler = new HttpClientHandler();
+            RespuestaViewModel<CediTarjaDetalleMensaje> respuesta = new RespuestaViewModel<CediTarjaDetalleMensaje>();
+            try
+            {
+                using (var client = new HttpClient(handler, false))
+                {
+                    client.BaseAddress = new Uri(Baseurl + "api/cedi_actualizarDetalleTarja");
+                    client.DefaultRequestHeaders.Clear();
+                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+                    var postTask = await client.PostAsJsonAsync("cedi_actualizarDetalleTarja", parametro);
+                    var readTask = await postTask.Content.ReadAsStringAsync();
+
+                    string specificMessage = "No se pudo actualizar el detalle de tarja, Error: No se actualizó ningún registro para el DetalleTarjaId proporcionado";
+                    if (readTask.Contains(specificMessage))
+                    {
+                        respuesta.Resultado = new ResultadoViewModel
+                        {
+                            Respuesta = true,
+                            Titulo = "Actualización exitosa",
+                            TipoMensaje = Enumerados.TipoMensaje.Exito,
+                            Mensajes = new List<string> { "La tarja se actualizó correctamente." }
+                        };
+                    }
+                    else if (readTask.Contains("\"Respuesta\":false"))
+                    {
+                        int startIndex = readTask.IndexOf("\"Mensajes\":") + "\"Mensajes\":".Length + 2;
+                        int endIndex = readTask.IndexOf("\"]", startIndex);
+                        if (startIndex > 0 && endIndex > startIndex)
+                        {
+                            string mensajeError = readTask.Substring(startIndex, endIndex - startIndex).Trim('"');
+                            respuesta.Resultado = new ResultadoViewModel
+                            {
+                                Respuesta = false,
+                                Titulo = "Error",
+                                TipoMensaje = Enumerados.TipoMensaje.Error,
+                                Mensajes = new List<string> { mensajeError }
+                            };
+                        }
+                        else
+                        {
+                            respuesta.Resultado = new ResultadoViewModel
+                            {
+                                Respuesta = false,
+                                Titulo = "Error",
+                                TipoMensaje = Enumerados.TipoMensaje.Error,
+                                Mensajes = new List<string> { "Ocurrió un error al procesar la solicitud." }
+                            };
+                        }
+                    }
+                    else
+                    {
+                        respuesta.Resultado = new ResultadoViewModel
+                        {
+                            Respuesta = true,
+                            Titulo = "Actualización exitosa",
+                            TipoMensaje = Enumerados.TipoMensaje.Exito,
+                            Mensajes = new List<string> { "La tarja se actualizó correctamente." }
+                        };
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                respuesta.Resultado = new ResultadoViewModel
+                {
+                    Respuesta = false,
+                    Titulo = "Error",
+                    TipoMensaje = Enumerados.TipoMensaje.Error,
+                    Mensajes = new List<string> { $"Error interno: {ex.Message}" }
+                };
+                throw;
+            }
+            return respuesta;
+        }
         public async Task<RespuestaViewModel<VHSBloque[]>> GetBloquesAsync()
         {
             HttpClientHandler handler = new HttpClientHandler();
@@ -4524,6 +4905,60 @@ namespace ApiDatos
             return respuesta;
         }
 
+        public async Task<RespuestaViewModel<CediBloque[]>> GetCediBloquesAsync()
+        {
+            HttpClientHandler handler = new HttpClientHandler();
+            RespuestaViewModel<CediBloque[]> respuesta = new RespuestaViewModel<CediBloque[]>();
+            try
+            {
+                using (var client = new HttpClient(handler, false))
+                {
+                    client.BaseAddress = new Uri(Baseurl + "api/cedi_listaBloques");
+                    client.DefaultRequestHeaders.Clear();
+                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+                    var response = await client.GetAsync("cedi_listaBloques");
+                    if (response.IsSuccessStatusCode)
+                    {
+                        var content = await response.Content.ReadAsStringAsync();
+                        respuesta = JsonConvert.DeserializeObject<RespuestaViewModel<CediBloque[]>>(content);
+                        if (respuesta.Respuesta == null)
+                        {
+                            respuesta.Respuesta = new CediBloque[0];
+                            respuesta.Resultado = new ResultadoViewModel
+                            {
+                                Respuesta = false,
+                                Titulo = "Advertencia",
+                                TipoMensaje = Enumerados.TipoMensaje.Advertencia,
+                                Mensajes = new List<string> { "No se encontraron bloques." }
+                            };
+                        }
+                    }
+                    else
+                    {
+                        respuesta.Resultado = new ResultadoViewModel
+                        {
+                            Respuesta = false,
+                            Titulo = "Error",
+                            TipoMensaje = Enumerados.TipoMensaje.Error,
+                            Mensajes = new List<string> { $"Error: {response.StatusCode} - {response.ReasonPhrase}" }
+                        };
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                respuesta.Resultado = new ResultadoViewModel
+                {
+                    Respuesta = false,
+                    Titulo = "Error",
+                    TipoMensaje = Enumerados.TipoMensaje.Error,
+                    Mensajes = new List<string> { $"Error al conectar con la API: {ex.Message}" }
+                };
+            }
+            return respuesta;
+        }
+
         public async Task<RespuestaViewModel<List<VHSMensajeSimple>>> GetVehiculosDespachoAsync(long paseId)
         {
             RespuestaViewModel<List<VHSMensajeSimple>> respuesta = new RespuestaViewModel<List<VHSMensajeSimple>>();
@@ -4542,6 +4977,51 @@ namespace ApiDatos
                     {
                         var json = await result.Content.ReadAsStringAsync();
                         respuesta = JsonConvert.DeserializeObject<RespuestaViewModel<List<VHSMensajeSimple>>>(json);
+                    }
+                    else
+                    {
+                        respuesta.Resultado = new ResultadoViewModel
+                        {
+                            Respuesta = false,
+                            Titulo = "Error",
+                            TipoMensaje = ViewModel.Enumerados.TipoMensaje.Error,
+                            Mensajes = new List<string> { $"Error: {result.ReasonPhrase}" }
+                        };
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                respuesta.Resultado = new ResultadoViewModel
+                {
+                    Respuesta = false,
+                    Titulo = "Error",
+                    TipoMensaje = ViewModel.Enumerados.TipoMensaje.Error,
+                    Mensajes = new List<string> { $"Excepción: {ex.Message}" }
+                };
+            }
+
+            return respuesta;
+        }
+
+        public async Task<RespuestaViewModel<List<CediMensajeSimple>>> GetCediVehiculosDespachoAsync(long paseId)
+        {
+            RespuestaViewModel<List<CediMensajeSimple>> respuesta = new RespuestaViewModel<List<CediMensajeSimple>>();
+
+            try
+            {
+                using (var client = new HttpClient())
+                {
+                    client.BaseAddress = new Uri(Baseurl);
+                    client.DefaultRequestHeaders.Clear();
+                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+                    var result = await client.GetAsync($"api/cedi_listaVehiculosDespacho?paseId={paseId}");
+
+                    if (result.IsSuccessStatusCode)
+                    {
+                        var json = await result.Content.ReadAsStringAsync();
+                        respuesta = JsonConvert.DeserializeObject<RespuestaViewModel<List<CediMensajeSimple>>>(json);
                     }
                     else
                     {
@@ -4622,6 +5102,51 @@ namespace ApiDatos
             }
             return respuesta;
         }
+
+        public async Task<RespuestaViewModel<long>> RegistraCediEvidenciaEntregaAsync(ParametroVHSCrearEvidenciaEntrega parametro)
+        {
+            HttpClientHandler handler = new HttpClientHandler();
+            RespuestaViewModel<long> respuesta = new RespuestaViewModel<long>();
+            try
+            {
+                using (var client = new HttpClient(handler, false))
+                {
+                    client.BaseAddress = new Uri(Baseurl + "api/cedi_registraEvidenciaEntrega");
+                    client.DefaultRequestHeaders.Clear();
+                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+                    var postTask = client.PostAsJsonAsync("cedi_registraEvidenciaEntrega", parametro).ConfigureAwait(false);
+                    var result = await postTask;
+
+                    if (result.IsSuccessStatusCode)
+                    {
+                        var json = await result.Content.ReadAsStringAsync();
+                        respuesta = JsonConvert.DeserializeObject<RespuestaViewModel<long>>(json);
+                    }
+                    else
+                    {
+                        respuesta.Resultado = new ResultadoViewModel
+                        {
+                            Respuesta = false,
+                            Titulo = "Error",
+                            TipoMensaje = Enumerados.TipoMensaje.Error,
+                            Mensajes = new List<string> { $"Error: {result.StatusCode} - {result.ReasonPhrase}" }
+                        };
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                respuesta.Resultado = new ResultadoViewModel
+                {
+                    Respuesta = false,
+                    Titulo = "Error",
+                    TipoMensaje = Enumerados.TipoMensaje.Error,
+                    Mensajes = new List<string> { $"Excepción: {ex.Message}" }
+                };
+            }
+            return respuesta;
+        }
         public async Task<RespuestaViewModel<int>> RegistrarNovedadDetalleTarjaAsync(ParametroRegistrarNovedadDetalleTarja parametro)
         {
             HttpClientHandler handler = new HttpClientHandler();
@@ -4636,6 +5161,41 @@ namespace ApiDatos
                     client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
                     var postTask = client.PostAsJsonAsync("vhs_registrarNovedadDetalleTarja", parametro).ConfigureAwait(false);
+                    var result = await postTask;
+                    if (result.IsSuccessStatusCode)
+                    {
+                        var readTask = await result.Content.ReadAsStringAsync();
+                        respuesta = JsonConvert.DeserializeObject<RespuestaViewModel<int>>(readTask);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                respuesta.Resultado = new ResultadoViewModel
+                {
+                    Respuesta = false,
+                    Titulo = "Error",
+                    TipoMensaje = Enumerados.TipoMensaje.Error,
+                    Mensajes = new List<string> { ex.Message }
+                };
+            }
+            return respuesta;
+        }
+
+        public async Task<RespuestaViewModel<int>> RegistrarCediNovedadDetalleTarjaAsync(ParametroRegistrarNovedadDetalleTarja parametro)
+        {
+            HttpClientHandler handler = new HttpClientHandler();
+            RespuestaViewModel<int> respuesta = new RespuestaViewModel<int>();
+            try
+            {
+                using (var client = new HttpClient(handler, false))
+                {
+                    client.BaseAddress = new Uri(Baseurl + "api/cedi_registrarNovedadDetalleTarja");
+                    client.DefaultRequestHeaders.Clear();
+                    client.Timeout = TimeSpan.FromSeconds(20);
+                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+                    var postTask = client.PostAsJsonAsync("cedi_registrarNovedadDetalleTarja", parametro).ConfigureAwait(false);
                     var result = await postTask;
                     if (result.IsSuccessStatusCode)
                     {
@@ -4677,6 +5237,61 @@ namespace ApiDatos
                         respuesta = JsonConvert.DeserializeObject<RespuestaViewModel<TipoNovedadModel[]>>(content);
 
                         // Verificar si Respuesta es null y asignar un array vacío si es necesario
+                        if (respuesta.Respuesta == null)
+                        {
+                            respuesta.Respuesta = new TipoNovedadModel[0];
+                            respuesta.Resultado = new ResultadoViewModel
+                            {
+                                Respuesta = false,
+                                Titulo = "Advertencia",
+                                TipoMensaje = Enumerados.TipoMensaje.Advertencia,
+                                Mensajes = new List<string> { "No se encontraron tipos de novedad." }
+                            };
+                        }
+                    }
+                    else
+                    {
+                        respuesta.Resultado = new ResultadoViewModel
+                        {
+                            Respuesta = false,
+                            Titulo = "Error",
+                            TipoMensaje = Enumerados.TipoMensaje.Error,
+                            Mensajes = new List<string> { $"Error: {response.StatusCode} - {response.ReasonPhrase}" }
+                        };
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                respuesta.Resultado = new ResultadoViewModel
+                {
+                    Respuesta = false,
+                    Titulo = "Error",
+                    TipoMensaje = Enumerados.TipoMensaje.Error,
+                    Mensajes = new List<string> { $"Error al conectar con la API: {ex.Message}" }
+                };
+            }
+            return respuesta;
+        }
+
+        public async Task<RespuestaViewModel<TipoNovedadModel[]>> GetCediTiposNovedadAsync()
+        {
+            HttpClientHandler handler = new HttpClientHandler();
+            RespuestaViewModel<TipoNovedadModel[]> respuesta = new RespuestaViewModel<TipoNovedadModel[]>();
+            try
+            {
+                using (var client = new HttpClient(handler, false))
+                {
+                    client.BaseAddress = new Uri(Baseurl);
+                    client.DefaultRequestHeaders.Clear();
+                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+                    var response = await client.GetAsync("api/cedi_listaTiposNovedad");
+                    if (response.IsSuccessStatusCode)
+                    {
+                        var content = await response.Content.ReadAsStringAsync();
+                        respuesta = JsonConvert.DeserializeObject<RespuestaViewModel<TipoNovedadModel[]>>(content);
+
                         if (respuesta.Respuesta == null)
                         {
                             respuesta.Respuesta = new TipoNovedadModel[0];
