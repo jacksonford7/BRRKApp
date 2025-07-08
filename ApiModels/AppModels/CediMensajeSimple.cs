@@ -1,4 +1,7 @@
-﻿using System;
+
+using System;
+
+
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,9 +12,7 @@ namespace ApiModels.AppModels
     public class CediMensajeSimple
     {
         public long VehiculoDespachadoID { get; set; }
-        public int DetalleTarjaID { get; set; }   // NUEVO CAMPO
+        public int DetalleTarjaID { get; set; }
         public string Mensaje { get; set; }
     }
-
-
 }

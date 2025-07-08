@@ -1,4 +1,5 @@
-﻿using System;
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,11 +15,13 @@ namespace ApiModels.AppModels
         public List<CediTarjaDetalleMensaje> Detalle { get; set; }
         public int DetalleTarjaID { get; set; }
 
+
         public string DescripcionProducto { get; set; }
 
         public string Origen { get; set; }
 
         public long VehiculoDespachadoID { get; set; }
+
 
 
     }
