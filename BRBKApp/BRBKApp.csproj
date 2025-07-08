@@ -132,6 +132,12 @@
     <Compile Update="Views\VHSTarjaDetallePage.xaml.cs">
       <DependentUpon>VHSTarjaDetallePage.xaml</DependentUpon>
     </Compile>
+    <Compile Update="Views\CediOrdenTrabajoPage.xaml.cs">
+      <DependentUpon>CediOrdenTrabajoPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\CediTarjaPage.xaml.cs">
+      <DependentUpon>CediTarjaPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
@@ -228,5 +234,10 @@
     <EmbeddedResource Update="Views\VHSVehiculosDespachoPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-  </ItemGroup>
-</Project>
+    <EmbeddedResource Update="Views\CediOrdenTrabajoPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\CediTarjaPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup></Project>
