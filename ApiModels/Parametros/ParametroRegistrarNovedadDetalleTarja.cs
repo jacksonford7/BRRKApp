@@ -8,7 +8,7 @@ namespace ApiModels.Parametros
 {
     public class ParametroRegistrarNovedadDetalleTarja
     {
-        public int DetalleTarjaID { get; set; }
+        public long DetalleTarjaID { get; set; }
         public string Descripcion { get; set; }
         public string Usuario { get; set; }
 

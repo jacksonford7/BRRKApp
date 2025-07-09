@@ -38,7 +38,7 @@ namespace BRBKWebApiData
             return list;
         }
 
-        public static int CrearNovedad(int detalleTarjaId, int TipoNovedadID, string descripcion, string usuario, out string OnError)
+        public static int CrearNovedad(long detalleTarjaId, int TipoNovedadID, string descripcion, string usuario, out string OnError)
         {
             OnInit(_dbname);
             parametros.Clear();

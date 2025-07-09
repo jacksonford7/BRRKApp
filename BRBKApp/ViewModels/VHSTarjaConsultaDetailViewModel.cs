@@ -159,7 +159,7 @@ namespace BRBKApp.ViewModels
                 if (!string.IsNullOrWhiteSpace(value))
                 {
                     string firstNumber = ExtractFirstNumber(value);
-                    if (!string.IsNullOrWhiteSpace(firstNumber) && int.TryParse(firstNumber, out int detalleTarjaId))
+                    if (!string.IsNullOrWhiteSpace(firstNumber) && long.TryParse(firstNumber, out long detalleTarjaId))
                     {
                         _detalleTarjaIdInput = firstNumber;
                         OnPropertyChanged(nameof(DetalleTarjaIdInput));
@@ -360,7 +360,7 @@ namespace BRBKApp.ViewModels
             }
         }
 
-        private async Task LoadDetalleAsync(int detalleTarjaId)
+        private async Task LoadDetalleAsync(long detalleTarjaId)
         {
             try
             {
@@ -436,7 +436,7 @@ namespace BRBKApp.ViewModels
 
         private async Task SearchByCode()
         {
-            if (string.IsNullOrWhiteSpace(DetalleTarjaIdInput) || !int.TryParse(DetalleTarjaIdInput, out int detalleTarjaId))
+            if (string.IsNullOrWhiteSpace(DetalleTarjaIdInput) || !long.TryParse(DetalleTarjaIdInput, out long detalleTarjaId))
             {
                 await Application.Current.MainPage.DisplayAlert("Error", "Por favor, ingrese un código válido", "OK");
                 return;
@@ -547,7 +547,7 @@ namespace BRBKApp.ViewModels
         {
             if (Detalle == null) return;
 
-            int detalleTarjaId = Detalle.DetalleTarjaID;
+            long detalleTarjaId = Detalle.DetalleTarjaID;
             string currentDate = DateTime.Now.ToString("dd/MM/yyyy HH:mm");
 
             string zpl = GenerateZPLForTarja(
@@ -565,7 +565,7 @@ namespace BRBKApp.ViewModels
         }
 
         private string GenerateZPLForTarja(
-            int detalleTarjaId,
+            long detalleTarjaId,
             string date,
             string tipoCargaDescripcion,
             string informacionVehiculo,
@@ -628,14 +628,14 @@ namespace BRBKApp.ViewModels
 
         private async Task AgregarNovedad()
         {
-            int detalleId = 0;
+            long detalleId = 0;
 
             // Si ya cargaste un detalle:
             if (Detalle != null && Detalle.DetalleTarjaID > 0)
             {
                 detalleId = Detalle.DetalleTarjaID;
             }
-            else if (!string.IsNullOrWhiteSpace(DetalleTarjaIdInput) && int.TryParse(DetalleTarjaIdInput, out int parsedId))
+            else if (!string.IsNullOrWhiteSpace(DetalleTarjaIdInput) && long.TryParse(DetalleTarjaIdInput, out long parsedId))
             {
                 detalleId = parsedId;
             }
