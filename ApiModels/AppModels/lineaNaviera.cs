@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
 
 namespace ApiModels.AppModels
 {
@@ -12,5 +11,4 @@ namespace ApiModels.AppModels
         public string id { get; set; }
         public string nombre { get; set; }
         #endregion
-    }
-}
+    }}
