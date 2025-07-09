@@ -43,8 +43,8 @@ namespace BRBKApp.ViewModels
         }
         public Command AddCommand { get; }
         public Command CancelCommand { get; }
-        private Models.AppModelCediTarjaDetalle _currentEntry;
-        public Models.AppModelCediTarjaDetalle CurrentEntry
+        private AppModelCediTarjaDetalle _currentEntry;
+        public AppModelCediTarjaDetalle CurrentEntry
         {
             get => _currentEntry;
             set
@@ -59,7 +59,7 @@ namespace BRBKApp.ViewModels
             Title = "Agregar detalle Tarja";
             AddCommand = new Command(OnCrearClicked);
             CancelCommand = new Command(OnCancelClicked);
-            if (CurrentEntry == null) CurrentEntry = new Models.AppModelCediTarjaDetalle();
+            if (CurrentEntry == null) CurrentEntry = new AppModelCediTarjaDetalle();
             CediTarja = entry;
             this.numeroTarja = entry.TarjaId.ToString();
             _descripcionProducto = entry.DescripcionProducto;
