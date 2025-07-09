@@ -37,7 +37,7 @@ namespace BRBKApp.ViewModels
             set => SetProperty(ref descripcionDetalle, value);
         }
 
-        public int DetalleTarjaID { get; set; }
+        public long DetalleTarjaID { get; set; }
         public string NumeroTarja { get; set; }
 
         public Command SaveCommand { get; }

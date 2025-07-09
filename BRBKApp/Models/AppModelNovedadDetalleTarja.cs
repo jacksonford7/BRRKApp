@@ -6,7 +6,7 @@ namespace BRBKApp.Models
 {
     public class AppModelNovedadDetalleTarja
     {
-        public int DetalleTarjaID { get; set; }
+        public long DetalleTarjaID { get; set; }
         public string Descripcion { get; set; }
     }
 }
