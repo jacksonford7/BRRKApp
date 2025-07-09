@@ -82,6 +82,12 @@ namespace BRBKApp.ViewModels
             get => _esActivoCEDI2;
             set { _esActivoCEDI2 = value; OnPropertyChanged(); }
         }
+        public bool _esActivoCEDI3 = false;
+        public bool esActivoCEDI3
+        {
+            get => _esActivoCEDI3;
+            set { _esActivoCEDI3 = value; OnPropertyChanged(); }
+        }
         //########################
         //     OPCIONES BRBK
         //########################
@@ -313,6 +319,7 @@ namespace BRBKApp.ViewModels
                                 }
                                 if (item.Selection.Trim() == "CEDI1") { esActivoCEDI1 = true; esActivoMn5 = true; }
                                 if (item.Selection.Trim() == "CEDI2") { esActivoCEDI2 = true; esActivoMn5 = true; }
+                                if (item.Selection.Trim() == "CEDI3") { esActivoCEDI3 = true; esActivoMn5 = true; }
                                 if (item.Selection.Trim() == "VHS6") { esActivoVHS6 = true; esActivoMn6 = true; }
                             }
                         }
