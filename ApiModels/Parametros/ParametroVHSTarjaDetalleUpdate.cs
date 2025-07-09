@@ -8,7 +8,7 @@ namespace ApiModels.Parametros
 {
     public class ParametroVHSTarjaDetalleUpdate
     {
-        public int DetalleTarjaID { get; set; }
+        public long DetalleTarjaID { get; set; }
         public int BloqueId { get; set; }
         public int NumeroBloque { get; set; }
         public string DocumentoTransporte { get; set; }
