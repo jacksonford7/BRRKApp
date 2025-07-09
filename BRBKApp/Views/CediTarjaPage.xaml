@@ -16,10 +16,15 @@
                                     <Grid ColumnSpacing="5">
                                         <Grid.ColumnDefinitions>
                                             <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="Auto" />
                                         </Grid.ColumnDefinitions>
                                         <StackLayout Grid.Column="0">
                                             <Label Text="{Binding TarjaId}" />
                                             <Label Text="{Binding Mensaje}" LineBreakMode="WordWrap"/>
+                                        </StackLayout>
+                                        <StackLayout Grid.Column="1">
+                                            <Button Text="Detalles" HorizontalOptions="End" VerticalOptions="CenterAndExpand" WidthRequest="120" HeightRequest="35" CornerRadius="20"
+                                                    Command="{Binding Source={RelativeSource AncestorType={x:Type vm:CediTarjaViewModel}}, Path=CommandTarja}" CommandParameter="{Binding .}"/>
                                         </StackLayout>
                                     </Grid>
                                 </Frame>
