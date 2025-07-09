@@ -69,7 +69,7 @@ namespace BRBKApp.ViewModels
         {
             if (entry != null)
             {
-                await Shell.Current.Navigation.PushModalAsync(new Views.CediTarjaPage());
+                await Shell.Current.Navigation.PushModalAsync(new Views.CediTarjaCrear(entry));
             }
         }
     }
