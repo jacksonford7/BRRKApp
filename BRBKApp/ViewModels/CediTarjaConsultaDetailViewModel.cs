@@ -500,7 +500,7 @@ namespace BRBKApp.ViewModels
                 var datos = new Datos();
                 var request = new ParametroVHSTarjaDetalleUpdate
                 {
-                    DetalleTarjaID = Detalle.DetalleTarjaID,
+                    DetalleTarjaID = (int)Detalle.DetalleTarjaID,
                     DocumentoTransporte = Detalle.DocumentoTransporte,
                     PackingList = Detalle.PackingList,
                     VIN = Detalle.VIN,
@@ -547,7 +547,7 @@ namespace BRBKApp.ViewModels
         {
             if (Detalle == null) return;
 
-            int detalleTarjaId = Detalle.DetalleTarjaID;
+            int detalleTarjaId = (int)Detalle.DetalleTarjaID;
             string currentDate = DateTime.Now.ToString("dd/MM/yyyy HH:mm");
 
             string zpl = GenerateZPLForTarja(
@@ -633,7 +633,7 @@ namespace BRBKApp.ViewModels
             // Si ya cargaste un detalle:
             if (Detalle != null && Detalle.DetalleTarjaID > 0)
             {
-                detalleId = Detalle.DetalleTarjaID;
+                detalleId = (int)Detalle.DetalleTarjaID;
             }
             else if (!string.IsNullOrWhiteSpace(DetalleTarjaIdInput) && int.TryParse(DetalleTarjaIdInput, out int parsedId))
             {
