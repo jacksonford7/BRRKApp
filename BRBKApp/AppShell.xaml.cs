@@ -61,6 +61,7 @@ namespace BRBKApp
             Routing.RegisterRoute(nameof(CediOrdenTrabajoPage), typeof(CediOrdenTrabajoPage));
             Routing.RegisterRoute(nameof(CediTarjaPage), typeof(CediTarjaPage));
             Routing.RegisterRoute(nameof(CediTarjaDetallePage), typeof(CediTarjaDetallePage));
+            Routing.RegisterRoute(nameof(CediTarjaConsultaDetail), typeof(CediTarjaConsultaDetail));
 
             //AbrirTarjaNovedades = new Command(async () =>
             //{

@@ -247,6 +247,9 @@
     <FlyoutItem IsVisible="{Binding esActivoCEDI2}" Title="      >> [CEDI] Tarjas">
         <ShellContent Route="CediTarjaPage" ContentTemplate="{DataTemplate local:CediTarjaPage}" />
     </FlyoutItem>
+    <FlyoutItem IsVisible="{Binding esActivoCEDI3}" Title="      >> [CEDI] Buscar Vehiculo por QR" >
+        <ShellContent Route="CediTarjaConsultaDetail" ContentTemplate="{DataTemplate local:CediTarjaConsultaDetail}" />
+    </FlyoutItem>
     
     <MenuItem 
     Text="      >> [VHS] Novedades" 
