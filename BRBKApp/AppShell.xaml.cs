@@ -1,5 +1,6 @@
 ﻿using BRBKApp.ViewModels;
 using BRBKApp.Views;
+using ApiModels.AppModels;
 using System;
 using System.Collections.Generic;
 using System.Windows.Input;
