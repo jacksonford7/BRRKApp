@@ -138,6 +138,9 @@
     <Compile Update="Views\CediTarjaPage.xaml.cs">
       <DependentUpon>CediTarjaPage.xaml</DependentUpon>
     </Compile>
+    <Compile Update="Views\CediTarjaCrear.xaml.cs">
+      <DependentUpon>CediTarjaCrear.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
@@ -240,4 +243,6 @@
     <EmbeddedResource Update="Views\CediTarjaPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-  </ItemGroup></Project>
+    <EmbeddedResource Update="Views\CediTarjaCrear.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>  </ItemGroup></Project>
