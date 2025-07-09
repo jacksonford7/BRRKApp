@@ -1,5 +1,5 @@
-using BRBKApp.ViewModels;
 using ApiModels.AppModels;
+using BRBKApp.ViewModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
