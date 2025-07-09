@@ -59,6 +59,9 @@
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
+                <ImageButton IsVisible="{Binding esVisible,Mode=OneWay}" Source="{Binding BtnIcon}"
+                             BorderColor="#2b3c3c" BackgroundColor="Transparent" HorizontalOptions="End" Margin="0,0,20,10"
+                             VerticalOptions="End" WidthRequest="70" HeightRequest="70" Command="{Binding AddCommand}" />
             </StackLayout>
         </RefreshView>
     </ContentPage.Content>

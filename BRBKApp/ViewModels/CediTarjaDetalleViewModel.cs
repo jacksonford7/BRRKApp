@@ -34,6 +34,8 @@ namespace BRBKApp.ViewModels
             set { _btnIcon = value; SetProperty(ref _btnIcon, value); }
         }
 
+        public ICommand AddCommand => new Command(async () => await AddDetail());
+
         public ICommand RefreshCommand => new Command(async () => await RefreshItemsAsync());
 
         public CediTarjaDetalleViewModel(CediTarjaMensaje tarja)
@@ -74,6 +76,14 @@ namespace BRBKApp.ViewModels
             esActivo = true;
             OnPropertyChanged(nameof(Detalle));
             OnPropertyChanged(nameof(IsListaVacia));
+        }
+
+        private async Task AddDetail()
+        {
+            if (Model != null)
+            {
+                await Shell.Current.Navigation.PushModalAsync(new CediTarjaAddDetail(Model));
+            }
         }
     }
 }
