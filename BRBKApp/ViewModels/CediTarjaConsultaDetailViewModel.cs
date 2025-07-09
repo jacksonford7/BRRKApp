@@ -21,7 +21,7 @@ namespace BRBKApp.ViewModels
     public class CediTarjaConsultaDetailViewModel : BaseViewModel, INotifyPropertyChanged
     {
         private string _numeroTarja;
-        private CediTarjaDetalleMensaje _detalle;
+        private AppModelCediTarjaDetalle _detalle;
         private string _detalleTarjaIdInput;
         private bool _showCodeInput;
         private bool _showDetails;
@@ -143,7 +143,7 @@ namespace BRBKApp.ViewModels
             set => SetProperty(ref _numeroTarja, value);
         }
 
-        public CediTarjaDetalleMensaje Detalle
+        public AppModelCediTarjaDetalle Detalle
         {
             get => _detalle;
             set => SetProperty(ref _detalle, value);
@@ -375,7 +375,7 @@ namespace BRBKApp.ViewModels
                 {
                     Detalle = response.Respuesta;
                     NumeroBloque = Detalle.NumeroBloque;
-                    SelectedBloque = Detalle.Bloque ?? Bloques.FirstOrDefault(b => b.Id == Detalle.Id);
+                    SelectedBloque = Bloques.FirstOrDefault(b => b.Id == Detalle.Id);
                     if (Detalle.Fotos != null && Detalle.Fotos.Any())
                     {
                         await LoadImagesAsync();
