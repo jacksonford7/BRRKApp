@@ -85,5 +85,21 @@ namespace BRBKApp.ViewModels
                 await Shell.Current.Navigation.PushModalAsync(new CediTarjaAddDetail(Model));
             }
         }
+
+        public ICommand ConsultaCommand => new Command<int>(async (detalleTarjaId) => await ConsultarDetalle(detalleTarjaId));
+
+        private async Task ConsultarDetalle(int detalleTarjaId)
+        {
+            if (esActivo && Model != null)
+            {
+                var tarjaMensaje = new CediTarjaMensaje
+                {
+                    TarjaId = Model.TarjaId,
+                    OrdenTrabajoID = Model.OrdenTrabajoID,
+                    DetalleTarjaID = detalleTarjaId
+                };
+                await Shell.Current.Navigation.PushModalAsync(new CediTarjaConsultaDetail(tarjaMensaje));
+            }
+        }
     }
 }
