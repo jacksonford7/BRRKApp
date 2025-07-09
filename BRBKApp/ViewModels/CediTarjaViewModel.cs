@@ -18,10 +18,12 @@ namespace BRBKApp.ViewModels
         public bool esVisible;
 
         public ICommand RefreshCommand => new Command(async () => await RefreshItemsAsync());
+        public Command<CediTarjaMensaje> CommandTarja { get; }
 
         public CediTarjaViewModel()
         {
             Title = "Tarja CEDI";
+            CommandTarja = new Command<CediTarjaMensaje>(ClickTarja);
             LoadTarja().ConfigureAwait(true);
             isRefreshing = false;
             esActivo = true;
@@ -54,6 +56,15 @@ namespace BRBKApp.ViewModels
             esActivo = true;
             OnPropertyChanged(nameof(TarjaList));
             OnPropertyChanged(nameof(IsListaVacia));
+        }
+
+        async void ClickTarja(CediTarjaMensaje entry)
+        {
+            if (entry != null)
+            {
+                Services.NavigationService.CediTarjaModelToDetailPage = entry;
+                await Shell.Current.GoToAsync("CediTarjaDetallePage");
+            }
         }
     }
 }

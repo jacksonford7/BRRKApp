@@ -9,5 +9,8 @@ namespace BRBKApp.Services
     {
         public static VHSTarjaMensaje TarjaModelToDetailPage { get; set; }
         public static VHSTarjaMensaje AddDetailTarja { get; set; }
+
+        // Used for navigating to CEDI tarja detail pages
+        public static CediTarjaMensaje CediTarjaModelToDetailPage { get; set; }
     }
 }
