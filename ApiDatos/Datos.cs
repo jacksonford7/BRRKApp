@@ -4475,7 +4475,9 @@ namespace ApiDatos
             {
                 using (var client = new HttpClient(handler, false))
                 {
-                    client.BaseAddress = new Uri(Baseurl);
+
+                    client.BaseAddress = new Uri(Baseurl + "api/vhs_tarjaDetalle");
+
                     client.DefaultRequestHeaders.Clear();
                     client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
@@ -4523,7 +4525,9 @@ namespace ApiDatos
             {
                 using (var client = new HttpClient(handler, false))
                 {
-                    client.BaseAddress = new Uri(Baseurl);
+
+                    client.BaseAddress = new Uri(Baseurl + "api/vhs_tarjaDetalle");
+
                     client.DefaultRequestHeaders.Clear();
                     client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
