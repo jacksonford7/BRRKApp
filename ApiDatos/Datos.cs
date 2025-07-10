@@ -4306,12 +4306,12 @@ namespace ApiDatos
             {
                 using (var client = new HttpClient(handler, false))
                 {
-                    client.BaseAddress = new Uri(Baseurl + "api/vhs_tarjaDetalle");
+                    client.BaseAddress = new Uri(Baseurl);
                     client.DefaultRequestHeaders.Clear();
                     //client.Timeout = TimeSpan.FromSeconds(20);
                     client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
-                    var postTask = client.PostAsJsonAsync("vhs_tarjaDetalle", parametro).ConfigureAwait(false);
+                    var postTask = client.PostAsJsonAsync("api/vhs_tarjaDetalle", parametro).ConfigureAwait(false);
                     var result = await postTask;
                     if (result.IsSuccessStatusCode)
                     {
@@ -4352,11 +4352,11 @@ namespace ApiDatos
             {
                 using (var client = new HttpClient(handler, false))
                 {
-                    client.BaseAddress = new Uri(Baseurl + "api/cedi_tarjaDetalle");
+                    client.BaseAddress = new Uri(Baseurl);
                     client.DefaultRequestHeaders.Clear();
                     client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
-                    var postTask = client.PostAsJsonAsync("cedi_tarjaDetalle", parametro).ConfigureAwait(false);
+                    var postTask = client.PostAsJsonAsync("api/cedi_tarjaDetalle", parametro).ConfigureAwait(false);
                     var result = await postTask;
                     if (result.IsSuccessStatusCode)
                     {
@@ -4476,7 +4476,7 @@ namespace ApiDatos
                 using (var client = new HttpClient(handler, false))
                 {
 
-                    client.BaseAddress = new Uri(Baseurl + "api/vhs_tarjaDetalle");
+                    client.BaseAddress = new Uri(Baseurl);
 
                     client.DefaultRequestHeaders.Clear();
                     client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
@@ -4526,7 +4526,7 @@ namespace ApiDatos
                 using (var client = new HttpClient(handler, false))
                 {
 
-                    client.BaseAddress = new Uri(Baseurl + "api/vhs_tarjaDetalle");
+                    client.BaseAddress = new Uri(Baseurl);
 
                     client.DefaultRequestHeaders.Clear();
                     client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
