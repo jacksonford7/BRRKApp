@@ -332,7 +332,7 @@ namespace BRBKApp.ViewModels
             try
             {
                 var datos = new Datos();
-                var response = await datos.GetBloquesAsync();
+                var response = await datos.GetCediBloquesAsync();
                 if (response.Resultado.Respuesta)
                 {
                     Bloques.Clear();
@@ -340,12 +340,10 @@ namespace BRBKApp.ViewModels
                     {
                         foreach (var bloque in response.Respuesta)
                         {
-                            Bloques.Add(new CediBloque
+                            if (bloque != null)
                             {
-                                Id = bloque.Id,
-                                Nombre_Bloque = bloque.Nombre_Bloque ?? "Sin nombre",
-                                Capacidad = bloque.Capacidad > 0 ? bloque.Capacidad : 0
-                            });
+                                Bloques.Add(bloque);
+                            }
                         }
                     }
                 }
