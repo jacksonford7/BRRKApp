@@ -649,7 +649,7 @@ namespace BRBKApp.ViewModels
                 Descripcion = Detalle?.Observaciones // Puedes pasar vacío si no hay detalle cargado
             };
 
-            await Application.Current.MainPage.Navigation.PushModalAsync(new VHSNovedadDetalleTarjaPage(model));
+            await Application.Current.MainPage.Navigation.PushModalAsync(new CediNovedadDetalleTarjaPage(model));
         }
 
     }
