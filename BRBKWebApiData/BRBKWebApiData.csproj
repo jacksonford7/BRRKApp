@@ -82,7 +82,7 @@
     <Compile Include="carrierDA.cs" />
     <Compile Include="VHSEvidenciaEntregaDA.cs" />
     <Compile Include="CediEvidenciaEntregaDA.cs" />
-    <Compile Include="VHSVehiculoDespachoDA .cs" />
+    <Compile Include="VHSVehiculoDespachoDA.cs" />
     <Compile Include="CediVehiculoDespachoDA.cs" />
     <Compile Include="condicionDA.cs" />
     <Compile Include="configuracionAlertaDA.cs" />
