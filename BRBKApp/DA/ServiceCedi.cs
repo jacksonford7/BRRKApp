@@ -75,8 +75,8 @@ namespace BRBKApp.DA
             Datos datos = new Datos();
             return await datos.GetCediTarjaDetailByIdAsync(detalleTarjaId);
         }
+public static async Task<RespuestaViewModel<CediMensajeSimple>> RegistrarCediNovedadDetalleTarja(ParametroRegistrarNovedadDetalleTarja parametro)
+    => await new Datos().RegistrarCediNovedadDetalleTarjaAsync(parametro);
 
-        public static async Task<RespuestaViewModel<int>> RegistrarCediNovedadDetalleTarja(ParametroRegistrarNovedadDetalleTarja parametro)
-            => await new Datos().RegistrarCediNovedadDetalleTarjaAsync(parametro);
     }
 }
