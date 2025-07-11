@@ -7,11 +7,13 @@ using ApiModels.AppModels;
 using BRBKApp.DA;
 using BRBKApp.Views;
 using System.Windows.Input;
-using BRBKApp.ViewModels;
-
-public class CediVehiculosDespachoViewModel : BaseViewModel
+namespace BRBKApp.ViewModels
 {
-    public string NumeroPasePuerta { get; set; }
+    public class CediVehiculosDespachoViewModel : BaseViewModel
+    {
+        public string NumeroPasePuerta { get; set; }
+    }
+}
 
     public ObservableCollection<CediMensajeSimple> ListaVehiculos { get; set; }
 

@@ -152,9 +152,8 @@
       <DependentUpon>CediTarjaConsultaDetail.xaml</DependentUpon>
     </Compile>
 
-    <Compile Update="Views\CediNovedadDetalleTarjaPage.xaml.cs">
-      <DependentUpon>CediNovedadDetalleTarjaPage.xaml</DependentUpon>
-
+    <Compile Update="Views\CediVehiculosDespachoPage.xaml.cs">
+      <DependentUpon>CediVehiculosDespachoPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 
@@ -270,12 +269,10 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\CediVehiculosDespachoPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Views\CediNovedadDetalleTarjaPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Views\CediNovedadDetalleTarjaPage.xaml">
+<EmbeddedResource Update="Views/CediNovedadDetalleTarjaPage.xaml">
+  <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+</EmbeddedResource>
+
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
