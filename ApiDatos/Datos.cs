@@ -5107,7 +5107,7 @@ namespace ApiDatos
             return respuesta;
         }
 
-        public async Task<RespuestaViewModel<long>> RegistraCediEvidenciaEntregaAsync(ParametroVHSCrearEvidenciaEntrega parametro)
+        public async Task<RespuestaViewModel<long>> RegistraCediEvidenciaEntregaAsync(ParametroCediCrearEvidenciaEntrega parametro)
         {
             HttpClientHandler handler = new HttpClientHandler();
             RespuestaViewModel<long> respuesta = new RespuestaViewModel<long>();

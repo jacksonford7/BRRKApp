@@ -155,6 +155,9 @@
     <Compile Include="Views\CediVehiculosDespachoPage.xaml.cs">
       <DependentUpon>CediVehiculosDespachoPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\CediAgregarEvidenciaEntrega.xaml.cs">
+      <DependentUpon>CediAgregarEvidenciaEntrega.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
@@ -269,10 +272,12 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\CediVehiculosDespachoPage.xaml">
-<EmbeddedResource Update="Views/CediNovedadDetalleTarjaPage.xaml">
-  <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-</EmbeddedResource>
-
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CediAgregarEvidenciaEntrega.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views/CediNovedadDetalleTarjaPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

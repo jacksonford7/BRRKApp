@@ -83,6 +83,27 @@ namespace BRBKApp.DA
             return await datos.GetCediVehiculosDespachoAsync(paseId);
         }
 
+        public static async Task<RespuestaViewModel<long>> RegistraEvidenciaEntrega(ParametroCediCrearEvidenciaEntrega parametro)
+        {
+            Datos datos = new Datos();
+            RespuestaViewModel<long> response = new RespuestaViewModel<long>();
+            try
+            {
+                response = await datos.RegistraCediEvidenciaEntregaAsync(parametro);
+            }
+            catch (Exception ex)
+            {
+                response.Resultado = new ResultadoViewModel
+                {
+                    Respuesta = false,
+                    Titulo = "Error",
+                    TipoMensaje = Enumerados.TipoMensaje.Error,
+                    Mensajes = new List<string> { ex.Message }
+                };
+            }
+            return response;
+        }
+
         public static async Task<RespuestaViewModel<int>> RegistrarCediNovedadDetalleTarja(ParametroRegistrarNovedadDetalleTarja request)
         {
             RespuestaViewModel<int> returnValue = new RespuestaViewModel<int>();

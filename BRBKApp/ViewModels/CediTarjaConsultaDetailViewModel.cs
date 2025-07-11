@@ -266,7 +266,7 @@ namespace BRBKApp.ViewModels
 
             _ = InitializeAsync();
 
-            MessagingCenter.Subscribe<VHSAgregarEvidenciaEntregaViewModel>(this, "EvidenciaGrabada", (sender) =>
+            MessagingCenter.Subscribe<CediAgregarEvidenciaViewModel>(this, "EvidenciaGrabada", (sender) =>
             {
                 PuedeDespachar = false;
             });
@@ -598,7 +598,7 @@ namespace BRBKApp.ViewModels
         {
             if (_entry != null && _entry.VehiculoDespachadoID > 0)
             {
-                await Application.Current.MainPage.Navigation.PushModalAsync(new VHSAgregarEvidenciaEntrega(_entry.VehiculoDespachadoID));
+                await Application.Current.MainPage.Navigation.PushModalAsync(new CediAgregarEvidenciaEntrega(_entry.VehiculoDespachadoID));
             }
             else
             {
