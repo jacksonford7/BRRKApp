@@ -83,5 +83,26 @@ namespace BRBKApp.DA
             return await datos.GetCediVehiculosDespachoAsync(paseId);
         }
 
+        public static async Task<RespuestaViewModel<int>> RegistrarCediNovedadDetalleTarja(ParametroRegistrarNovedadDetalleTarja request)
+        {
+            RespuestaViewModel<int> returnValue = new RespuestaViewModel<int>();
+            Datos datos = new Datos();
+            try
+            {
+                returnValue = await datos.RegistrarCediNovedadDetalleTarjaAsync(request);
+            }
+            catch (Exception ex)
+            {
+                returnValue.Resultado = new ResultadoViewModel
+                {
+                    Respuesta = false,
+                    Titulo = "Error",
+                    TipoMensaje = Enumerados.TipoMensaje.Error,
+                    Mensajes = new List<string> { $"Error al registrar: {ex.Message}" }
+                };
+            }
+            return returnValue;
+        }
+
     }
 }
