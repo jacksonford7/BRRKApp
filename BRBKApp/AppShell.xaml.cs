@@ -11,6 +11,7 @@ namespace BRBKApp
     public partial class AppShell : Xamarin.Forms.Shell
     {
         public ICommand AbrirTarjaNovedades { get; }
+        public ICommand AbrirCediNovedades { get; }
         public AppShell()
         {
             InitializeComponent();
@@ -73,6 +74,11 @@ namespace BRBKApp
 
                 await Shell.Current.GoToAsync("//TarjaNovedadesRoot?origen=Novedad");
 
+            });
+
+            AbrirCediNovedades = new Command(async () =>
+            {
+                await Shell.Current.GoToAsync("CediTarjaConsultaDetail?origen=Novedad");
             });
 
 

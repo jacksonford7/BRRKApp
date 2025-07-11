@@ -21,8 +21,12 @@ namespace BRBKApp.ViewModels
             CargaMenu();
             AbrirTarjaNovedades = new Command(async () =>
             {
-                
+
                 await Shell.Current.GoToAsync("VHSTarjaConsultaDetail?origen=Novedad");
+            });
+            AbrirCediNovedades = new Command(async () =>
+            {
+                await Shell.Current.GoToAsync("CediTarjaConsultaDetail?origen=Novedad");
             });
         }
         //#################
@@ -87,6 +91,12 @@ namespace BRBKApp.ViewModels
         {
             get => _esActivoCEDI3;
             set { _esActivoCEDI3 = value; OnPropertyChanged(); }
+        }
+        public bool _esActivoCEDI4 = false;
+        public bool esActivoCEDI4
+        {
+            get => _esActivoCEDI4;
+            set { _esActivoCEDI4 = value; OnPropertyChanged(); }
         }
         //########################
         //     OPCIONES BRBK
@@ -255,6 +265,7 @@ namespace BRBKApp.ViewModels
 
 
         public ICommand AbrirTarjaNovedades { get; }
+        public ICommand AbrirCediNovedades { get; }
 
 
 
@@ -320,6 +331,7 @@ namespace BRBKApp.ViewModels
                                 if (item.Selection.Trim() == "CEDI1") { esActivoCEDI1 = true; esActivoMn5 = true; }
                                 if (item.Selection.Trim() == "CEDI2") { esActivoCEDI2 = true; esActivoMn5 = true; }
                                 if (item.Selection.Trim() == "CEDI3") { esActivoCEDI3 = true; esActivoMn5 = true; }
+                                if (item.Selection.Trim() == "CEDI4") { esActivoCEDI4 = true; esActivoMn5 = true; }
                                 if (item.Selection.Trim() == "VHS6") { esActivoVHS6 = true; esActivoMn6 = true; }
                             }
                         }
