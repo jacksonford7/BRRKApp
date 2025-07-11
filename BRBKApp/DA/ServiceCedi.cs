@@ -76,6 +76,7 @@ namespace BRBKApp.DA
             return await datos.GetCediTarjaDetailByIdAsync(detalleTarjaId);
         }
 
+
         public static async Task<RespuestaViewModel<List<CediMensajeSimple>>> GetVehiculosDespacho(long paseId)
         {
             Datos datos = new Datos();
